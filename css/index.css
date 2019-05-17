@@ -215,6 +215,10 @@ h1 {
 .halfs-max {
   border-radius: 10px;
 }
+.feature-info {
+  margin: 1.5rem 0;
+  color: #FFFFFF;
+}
 .card {
   background-color: #FFFFFF;
   border-radius: 10px;
@@ -225,4 +229,22 @@ h1 {
 }
 td {
   font-size: 1.8rem;
+  padding: 0.5rem;
+}
+.btn-primary {
+  border-radius: 10px;
+  background-color: #56c0e4;
+  color: #363636;
+}
+.btn-primary:hover {
+  background-color: #0092B5;
+  color: #FFFFFF;
+}
+.btn {
+  font-size: 2.5rem;
+  padding: 0.5rem 1rem;
+}
+.cta-btn {
+  display: block;
+  margin: 0 auto;
 }
