@@ -175,18 +175,54 @@ img {
     max-width: 500px;
   }
 }
-@media (max-width: 500px) {
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
   .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  .nav .target-links {
     display: flex;
+    width: 20%;
+    justify-content: space-around;
   }
 }
-@media (max-width: 500px) {
-  .link {
-    font-size: 2.5rem;
-  }
+.nav .nav-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
 }
-@media (max-width: 500px) {
-  .container {
-    margin: 0 2.5%;
-  }
+body {
+  background-color: #1D90B7;
+}
+h1 {
+  color: #FFFFFF;
+}
+.container {
+  padding: 0 5%;
+}
+.center {
+  padding: 2.5rem 3rem;
+  text-align: center;
+}
+.halfs-max {
+  border-radius: 10px;
+}
+.card {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+}
+.table {
+  margin: 0 auto 1.5rem;
+}
+td {
+  font-size: 1.8rem;
 }
