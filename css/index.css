@@ -219,17 +219,35 @@ img {
 }
 .home .cta {
   margin-top: 30px;
-}
-.home .cta .cta-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 .home .cta .cta-content img {
   display: none;
 }
 .home .cta .cta-content .btn {
-  width: 20%;
+  margin-top: 20px;
+  width: 100%;
+}
+.home .cta .cta-content h2 {
+  color: white;
+}
+.home .main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .main-content .content {
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+  width: 90%;
+}
+.home .bottom-content .content {
+  text-align: center;
+  margin-top: 40px;
+  color: white;
 }
 @media (max-width: 5000px) {
   .nav {
