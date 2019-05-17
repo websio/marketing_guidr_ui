@@ -170,23 +170,74 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
-  .container {
-    max-width: 500px;
+.nav {
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 500px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
-@media (max-width: 500px) {
+.nav .target-links {
+  width: 100%;
+  display: flex;
+}
+@media (min-width: 500px) {
+  .nav .target-links {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+  }
+}
+.nav .nav-link {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+.nav .links-hidden {
+  display: none;
+}
+@media (min-width: 500px) {
+  .nav .links-hidden {
+    display: block;
+  }
+}
+@media (min-width: 500px) {
+  .nav .menu {
+    display: none;
+  }
+}
+.nav .brand {
+  font-size: 3rem;
+}
+.home {
+  background-color: #1D90B7;
+}
+.home .cta {
+  margin-top: 30px;
+}
+.home .cta .cta-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .cta .cta-content img {
+  display: none;
+}
+.home .cta .cta-content .btn {
+  width: 20%;
+}
+@media (max-width: 5000px) {
   .nav {
     display: flex;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 5000px) {
   .link {
     font-size: 2.5rem;
-  }
-}
-@media (max-width: 500px) {
-  .container {
-    margin: 0 2.5%;
   }
 }
