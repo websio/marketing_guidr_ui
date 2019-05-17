@@ -7,8 +7,6 @@ h1 {
 }
 
 
-
-
 .container {
     padding: 0 5%;
 }
@@ -24,6 +22,7 @@ h1 {
 
 .feature-info {
     margin: 1.5rem 0;
+    color: @white;
 }
 
 .card {
@@ -43,8 +42,14 @@ td {
 // CTA BUTTON 
 .btn-primary {
     border-radius: 10px;
-    background-color: @btn-primary;
-    color: @white;
+    background-color: lighten(@bg-color, 20%);
+    color: @mine-shaft;
+    
+
+    &:hover {
+        background-color: @btn-primary;
+        color: @white;  
+    }
 }
 .btn {
     font-size: 2.5rem;
