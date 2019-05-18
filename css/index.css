@@ -286,8 +286,8 @@ footer {
   }
 }
 .home .cta .cta-content .content-wrapper .btn {
-  color: white;
-  background-color: #0062B5;
+  color: #3f3f46;
+  background-color: #98cb6c;
   border: none;
   margin-top: 20px;
   width: 100%;
@@ -306,7 +306,7 @@ footer {
   }
 }
 .home .main-content {
-  background: linear-gradient(-45deg, #60ec96, #98cb6c 500px, #2d474f 500px);
+  background: linear-gradient(-45deg, #358654, #98cb6c 500px, #2d474f 500px);
   display: flex;
   flex-direction: column;
   align-items: center;
