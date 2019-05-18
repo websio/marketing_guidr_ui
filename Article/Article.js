@@ -4,6 +4,16 @@ class Article {
         this.expandButton = this.domElement.querySelector('.expandButton');
         this.expandButton.innerText = 'Expand';
 
+        this.expandButton.eventListener('click', () => expandArticle());
+    }
+    expandArticle {
+        this.domElement.toggle('feature-open');
+        if (this.domElement.classList.contains('feature-open')) {
+            this.expandButton.textContent = 'Close';
+          } else {
+            this.expandButton.textContent = 'Expand';
+          }
+      }
     }
 }
 
