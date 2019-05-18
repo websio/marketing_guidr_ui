@@ -6,15 +6,14 @@ class Article {
 
         this.expandButton.eventListener('click', () => expandArticle());
     }
-    expandArticle {
+    expandArticle() {
         this.domElement.toggle('feature-open');
         if (this.domElement.classList.contains('feature-open')) {
             this.expandButton.textContent = 'Close';
           } else {
             this.expandButton.textContent = 'Expand';
           }
-      }
-    }
+        }  
 }
 
 
