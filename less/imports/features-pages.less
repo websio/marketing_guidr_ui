@@ -1,10 +1,14 @@
 
 // not sure wether top 2 will go in container or not yet..
 .main-container {
-    background-color: #008FB3;  
+
+    background-color: #008FB3;
+  
     .nav {
         margin-top: 2.5rem;
         align-items: center;
+        
+        
     }
 
     padding: 0 5%;
@@ -36,6 +40,10 @@
     .features-cta-section {
         border-bottom: 2px solid @white;
         padding-bottom: 2.5rem;
+
+        @media @desktop {
+            display: flex;
+        }
     }
     
     .feature-info {
