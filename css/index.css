@@ -311,6 +311,10 @@ footer {
   margin-top: 40px;
   color: white;
 }
+.bottom-content .testimonials1 {
+  width: 25%;
+  border-radius: 50%;
+}
 .main-container {
   background-color: #008FB3;
   padding: 0 5%;
