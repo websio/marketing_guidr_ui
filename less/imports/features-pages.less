@@ -1,127 +1,122 @@
-
-
 // not sure wether top 2 will go in container or not yet..
 .main-container {
-    background-color: #008FB3; //bg
-/** nav section **/
-    .nav {
-        padding-top: 2.5rem;
-        align-items: center;
-        border-bottom: @border;
-        padding-bottom: 2.75rem;
-        margin-bottom: 2.75rem;
-        
-     }
-/** end nav **/
-/** Global styles **/
+  background-color: #008fb3; //bg
+  /** nav section **/
+  .nav {
+    padding-top: 2.5rem;
+    align-items: center;
+    border-bottom: @border;
+    padding-bottom: 2.75rem;
+    margin-bottom: 2.75rem;
+  }
+  /** end nav **/
+  /** Global styles **/
 
-.center {
+  .center {
     padding: 2.5rem 3rem;
     text-align: center;
-}
+  }
 
-
- 
-
-.halfs-max {
+  .halfs-max {
     border-radius: 10px;
+  }
+  padding: 0 5%;
+
+  /** feature info section **/
+  .features-cta-section {
+    border-bottom: 2px solid @white;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.75rem;
+  }
+  .feature-section {
+    @media @desktop {
+      display: flex;
+    }
+
+    .cta-phrase {
+      @media @desktop {
+        order: -1; // first item
+
+        border: 1px solid red;
+        align-self: flex-start;
+        width: 100%;
+        flex-direction: column;
+        display: inline-flex;
+      }
+    }
+    .cta-img {
+      @media @desktop {
+        max-width: 35%;
+        order: 10; //third item
+      }
+    }
+    .cta-info {
+      @media @desktop {
+        order: 3; // second item
+      }
+    }
+  }
+
+  .feature-info {
+    margin: 1.5rem 0;
+    color: @white;
+  }
+  /** end feature info section **/
+
+  .card {
+    background-color: @white;
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+  }
+
+  .table {
+    margin: 0 auto 1.5rem;
+
+    td {
+      font-size: 1.8rem;
+      padding: 0.5rem;
+    }
+  }
+
+  // CTA BUTTON
+  .btn-primary {
+    border-radius: 10px;
+    background-color: lighten(@bg-color, 20%);
+    color: @mine-shaft;
+
+    &:hover {
+      background-color: @btn-primary;
+      color: @white;
+    }
+  }
+  .btn {
+    font-size: 2.5rem;
+    padding: 0.5rem 1rem;
+  }
+  .cta-btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .features {
+    margin-top: 2.75rem;
+  }
+
+  .row {
+    display: flex;
+    margin-bottom: 2.75rem;
+
+    .img-thumb {
+      padding: 0.25rem;
+      border-radius: 0.5rem;
+      max-width: 100%;
+      height: auto;
+    }
+    .half {
+      max-width: 50%;
+    }
+    .pad {
+      padding: 0 1.25rem 0 1.25rem;
+    }
+  }
 }
-    padding: 0 5%;
-
- /** feature info section **/   
-    .features-cta-section {
-        border-bottom: 2px solid @white;
-        padding-bottom: 2.5rem;
-        margin-bottom: 2.75rem;
-
-        @media @desktop {
-            display: flex;
-        }
-
-        .cta-phrase {
-            @media @desktop {
-                order: -1;// first item
-            }
-        }
-        .cta-img { 
-            @media @desktop {
-                max-width: 35%;
-                order: 10; //third item
-            }
-        }
-        .cta-info {
-            @media @desktop {
-                order: 3; // second item
-            }
-        }
-    }
-    
-    .feature-info {
-        margin: 1.5rem 0;
-        color: @white; 
-    }
- /** end feature info section **/
- 
-    .card {
-        background-color: @white;
-        border-radius: 10px;
-        padding: 1.5rem 1rem;
-    }
-
-    .table {
-        margin: 0 auto 1.5rem;
-
-        td {
-            font-size: 1.8rem;
-            padding: 0.5rem;
-        }
-    }
-    
-    // CTA BUTTON 
-    .btn-primary {
-        border-radius: 10px;
-        background-color: lighten(@bg-color, 20%);
-        color: @mine-shaft;
-        
-    
-        &:hover {
-            background-color: @btn-primary;
-            color: @white;  
-        }
-    }
-    .btn {
-        font-size: 2.5rem;
-        padding: 0.5rem 1rem;
-    }
-    .cta-btn {
-        display: block;
-        margin: 0 auto;
-    }
-    
-    .features {
-        margin-top: 2.75rem;
-    }
-    
-    .row {
-        display: flex;
-        margin-bottom: 2.75rem;
-
-        .img-thumb {
-            padding: 0.25rem;
-            border-radius: 0.5rem;
-            max-width: 100%;
-            height: auto;
-            
-        }
-        .half {
-           max-width: 50%;
-        }
-        .pad {
-            padding: 0 1.25rem 0 1.25rem;
-
-        }
-    }
-}
-
-
-
