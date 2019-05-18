@@ -190,6 +190,9 @@ img {
   color: #359ccc;
   font-family: 'Fjalla One', sans-serif;
 }
+.nav .nav-link:hover {
+  color: #3f3f46;
+}
 @media (min-width: 501px) {
   .nav .nav-link {
     color: white;
