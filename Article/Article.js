@@ -1,7 +1,8 @@
 class Article {
     constructor(element) {
         this.element = element;
-        console.log(this.element);
+        this.
+
     }
 }
 
