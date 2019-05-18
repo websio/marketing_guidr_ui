@@ -178,19 +178,10 @@ img {
 }
 @media (min-width: 500px) {
   .nav {
+    border-bottom: 2px solid white;
+    background-color: #1D90B7;
     flex-direction: row;
     justify-content: space-between;
-  }
-}
-.nav .target-links {
-  width: 100%;
-  display: flex;
-}
-@media (min-width: 500px) {
-  .nav .target-links {
-    display: flex;
-    width: 30%;
-    justify-content: space-around;
   }
 }
 .nav .nav-link {
@@ -198,15 +189,24 @@ img {
   font-size: 2rem;
   color: #359ccc;
 }
+@media (min-width: 500px) {
+  .nav .nav-link {
+    color: white;
+    margin-right: 20px;
+  }
+}
 .nav .nav-link.highlight {
   color: #CFD0D0;
 }
-.nav .links-hidden {
+.nav .target-links {
   display: none;
 }
 @media (min-width: 500px) {
-  .nav .links-hidden {
-    display: block;
+  .nav .target-links {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
 .nav .menu {
@@ -219,6 +219,11 @@ img {
 }
 .nav .brand {
   font-size: 3rem;
+}
+@media (min-width: 500px) {
+  .nav .brand {
+    margin-left: 10px;
+  }
 }
 footer {
   margin-top: 3rem;
@@ -258,6 +263,7 @@ footer {
   }
 }
 .home .cta .cta-content {
+  padding-bottom: 30px;
   width: 100%;
   text-align: center;
   display: flex;

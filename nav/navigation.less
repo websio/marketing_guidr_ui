@@ -7,6 +7,8 @@
 
 
     @media @desktop {
+        border-bottom:2px solid white;
+        background-color:@bg-color;
         flex-direction : row;
         justify-content: space-between;
 
@@ -14,21 +16,17 @@
 
     }
 
-    .target-links {
-        width  : 100%;
-        display: flex;
-        
-        @media @desktop {
-            display        : flex;
-            width          : 30%;
-            justify-content: space-around;
-        }
-    }
-
+    
+    
     .nav-link {
         text-decoration: none;
         font-size      : 2rem;
         color          : rgb(53, 156, 204);
+
+        @media @desktop{
+            color:white;
+            margin-right: 20px;
+        }
 
         &.highlight {
             color: @iron;
@@ -36,11 +34,14 @@
 
     }
 
-    .links-hidden {
+    .target-links {
         display: none;
-
+       
         @media @desktop {
-            display: block;
+            width:40%;
+            display:flex;
+            justify-content: flex-end;
+            align-items: center;
         }
     }
 
@@ -53,6 +54,9 @@
 
     .brand {
         font-size: 3rem;
+        @media @desktop {
+            margin-left:10px;
+        }
     }
 
 }
