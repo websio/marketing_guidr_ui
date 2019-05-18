@@ -5,13 +5,20 @@ body {
 
 h1 {
     color: @white;
-
-   
-
 }
-
-
+header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.25rem;
+    border-bottom: @border;
+}
+// not sure wether top 2 will go in container or not yet..
 .container {
+
+    .nav {
+        margin-top: 2.5rem;
+        align-items: center;
+    }
+
     padding: 0 5%;
 
     .center {
@@ -21,6 +28,11 @@ h1 {
     
     .halfs-max {
         border-radius: 10px;
+    }
+
+    .features-cta-section {
+        border-bottom: 2px solid @white;
+        padding-bottom: 2.5rem;
     }
     
     .feature-info {
@@ -36,11 +48,13 @@ h1 {
     
     .table {
         margin: 0 auto 1.5rem;
+
+        td {
+            font-size: 1.8rem;
+            padding: 0.5rem;
+        }
     }
-    td {
-        font-size: 1.8rem;
-        padding: 0.5rem;
-    }
+    
     
 
     // CTA BUTTON 
@@ -70,15 +84,22 @@ h1 {
     
     .row {
         display: flex;
-    }
-    .half-mobile {
-        width: 50%;
-        height: 50%;
-        padding-top: 1.25rem;
-        padding-right: 1.25rem;
-    }
-    .half {
-        width: 50%;
+        margin-bottom: 2.75rem;
+
+        .img-thumb {
+            padding: 0.25rem;
+            border-radius: 0.5rem;
+            max-width: 100%;
+            height: auto;
+            
+        }
+        .half {
+           max-width: 50%;
+        }
+        .pad {
+            padding: 0 1.25rem 0 1.25rem;
+
+        }
     }
 }
 
