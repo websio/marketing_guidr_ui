@@ -1,9 +1,14 @@
 .home{
  background-color:@bg-color;
- 
+ h2{
+    font-family: 'Pacifico', cursive;
+    padding-bottom:20px;
+
+  }
  .cta{
   
   @media @desktop{
+     
     padding:100px 0;
       background-image: url("/imgs/worldA.png");
   background-repeat: no-repeat;
@@ -63,19 +68,30 @@
  }//end cta
 
  .main-content{
-     background:rgb(255, 76, 104);
+  background:rgb(255, 163, 120);
   display: flex;
   flex-direction:column;
   align-items: center;
-  
+  @media @desktop{
+      width:100%;
+    align-items: left;
+  }
   
 
 
   .content{
-   text-align:center;
+   
    margin-top:40px;
    color:white;
    width:90%;
+   
+   @media @desktop{
+       width:90%;
+       &:nth-child(2){
+        text-align: right;
+       }
+
+   }
    
   }
   
@@ -85,6 +101,6 @@
   text-align:center;
   margin-top:40px;
   color:white;
-  color:white;
+  
  }
 }

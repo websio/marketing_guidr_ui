@@ -227,6 +227,10 @@ footer {
 .home {
   background-color: #1D90B7;
 }
+.home h2 {
+  font-family: 'Pacifico', cursive;
+  padding-bottom: 20px;
+}
 .home .cta {
   margin-top: 30px;
   display: flex;
@@ -278,16 +282,29 @@ footer {
   color: #3f3f46;
 }
 .main-content {
-  background: #ff4c68;
+  background: #ffa378;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 500px) {
+  .main-content {
+    width: 100%;
+    align-items: left;
+  }
+}
 .main-content .content {
-  text-align: center;
   margin-top: 40px;
   color: white;
   width: 90%;
+}
+@media (min-width: 500px) {
+  .main-content .content {
+    width: 90%;
+  }
+  .main-content .content:nth-child(2) {
+    text-align: right;
+  }
 }
 .bottom-content .content {
   text-align: center;
