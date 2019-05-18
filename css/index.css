@@ -260,6 +260,8 @@ footer {
 .home .cta .cta-content {
   width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 @media (min-width: 500px) {
   .home .cta .cta-content {
