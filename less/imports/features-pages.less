@@ -71,8 +71,50 @@
     }
     
     .features-cta-section {
-        display: flex;
-    }
+        border-bottom: 2px solid @white;
+        padding-bottom: 2.5rem;
+        margin-bottom: 2.75rem;
+      }
+      .feature-section {
+        @media @desktop {
+          display: flex;
+        }
+    
+        .cta-phrase {
+          @media @desktop {
+            display:flex;
+            flex-direction: column;
+    
+            border: 1px solid red;
+            align-self: flex-start;
+            width: 100%;
+           
+          }
+        .cta-img-mobile{
+          @media @desktop{
+            display:none;
+          }
+        }
+        }
+    
+        .cta-img {
+          display: none;
+          @media @desktop {
+            display:block;
+            max-width: 35%;
+            order: 10; //third item
+          }
+        }
+        .cta-info {
+          @media @desktop {
+            order: 3; // second item
+    
+            display: inline-flex;
+            flex-direction: column;
+            align-self: flex-end;
+          }
+        }
+      }
     
 
     // CTA BUTTON 
