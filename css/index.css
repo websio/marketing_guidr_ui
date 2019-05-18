@@ -188,6 +188,7 @@ img {
   text-decoration: none;
   font-size: 2rem;
   color: #359ccc;
+  font-family: 'Fjalla One', sans-serif;
 }
 @media (min-width: 501px) {
   .nav .nav-link {
@@ -296,7 +297,7 @@ footer {
 }
 .home .cta .cta-content .content-wrapper h1 {
   padding-top: 20px;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico', sans-serif;
   font-size: 4rem;
   color: #3f3f46;
 }
