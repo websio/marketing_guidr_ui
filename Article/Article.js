@@ -1,7 +1,8 @@
 class Article {
     constructor(element) {
-        this.element = element;
-        this.
+        this.domElement = element;
+        this.expandButton = this.domElement.querySelector('.expandButton');
+        this.expandButton.innerText = 'Expand';
 
     }
 }
