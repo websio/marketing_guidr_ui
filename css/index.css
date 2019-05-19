@@ -172,12 +172,15 @@ img {
 }
 .nav {
   padding: 10px 10px;
-  width: 100%;
+  width: 90%;
   display: flex;
+  margin-left: 5%;
+  box-shadow: 4px 8px 8px #2e7c86;
   background-color: #ffffff;
 }
 @media (min-width: 501px) {
   .nav {
+    box-shadow: 0 0 0 #54e8fc;
     border-bottom: 2px solid white;
     background-color: #1D90B7;
     flex-direction: row;
@@ -187,7 +190,8 @@ img {
 .nav .menu-div {
   padding: 10px 0;
   background: white;
-  width: 100%;
+  width: 93%;
+  margin-left: 7%;
 }
 .nav .nav-blur {
   height: 100%;
