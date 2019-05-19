@@ -4,6 +4,12 @@
 
     background-color: @bg-color;
     padding: 0 5%;
+    margin: 0 auto;
+
+    @media @desktop {
+        max-width: 1000px;
+        padding: 0;
+    }
     
     .center {
         padding: 2.5rem 3rem;
@@ -20,10 +26,18 @@
     }
 
     .features-cta-section {
+        margin: 0 auto;
+        width: 90%;;
+
+
         border-bottom: 2px solid @white;
         padding-bottom: 2.5rem;
         margin-bottom: 2.75rem;
-      }
+
+        @media @desktop {
+            margin-top: 2.75rem;
+        }
+      } // .feature-cta-section
       .feature-section {
         @media @desktop {
           display: flex;
@@ -69,7 +83,7 @@
             align-self: flex-end;
           }
         }
-      }
+      } // .feature-section end
 
       
     .feature-info {
@@ -81,10 +95,7 @@
         background-color: @white;
         border-radius: 10px;
         padding: 1.5rem 1rem;
-    }
-
-    .feature-list {
-        
+        margin: 0 10%;
     }
     
     .table {
@@ -105,27 +116,26 @@
             background-color: @btn-primary;
             color: @white;  
         }
-
+    }
     .btn-secondary {
         background-color: #2D474F;
+        border: 1px solid @iron;
         color: @white;
 
         &:hover {
-            background-color: @white;
-            color: #2D474F;
+            background-color: @btn-primary;
+            border: 1px solid black;
+            box-shadow: 2px 2px 2px @bg-color;
         }
     }
-    }
+    
     .btn {
         border-radius: 10px;
         font-size: 2.5rem;
         padding: 0.5rem 1rem;
+        box-shadow: 2px 2px 2px darken(@bg-color, 25%);
     }
     
-    
-    .features {
-        margin-top: 2.75rem;
-    }
     
     .row {
         display: flex;
@@ -146,7 +156,7 @@
 
         }
     }
-}
+} // .container end
 
 
 
