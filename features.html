@@ -7,17 +7,39 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="nav/navigation.js" async></script>
     <script src="./Article/Article.js" async></script>
+
     <title>GuidR - Features</title>
 </head>
 <body>
     <div class="main-container">
         <header>
-            <nav class="nav">
-                <a class="nav-link brand link" href="index.html">GuidR</a>
-                <a class="nav-link highlight link" href="./features.html">Features</a>
-                <a class="nav-link link" href="#">About Us</a>           
+            <nav class="nav ">
+                <div id="navBlurDiv" class="side-hide"></div>
+                <div id="sideNavDiv" class="side-hide sideNavDiv">
+                   <div class="menu-div"> <i class="fas fa-bars fa-3x menu-close"></i></div>
+                   
+                    <div class="mobile-links ">
+                        <a class="nav-link mobile-brand" href="index.html">GuidR</a>
+
+                        <a class="nav-link " href="features.html">Features</a>
+                        <a class="nav-link " href="#">About Us</a>
+    
+                    </div>
+                </div>
+                <i class="fas fa-bars fa-3x menu"></i>
+                <a class="nav-link brand" href="index.html">GuidR</a>
+
+                <div class="target-links links-hidden">
+
+                    <a class="nav-link " href="features.html">Features</a>
+                    <a class="nav-link " href="#">About Us</a>
+
+                </div>
+
             </nav>
+            
         </header>
         <section class="features-cta-section">
             <div class="column-half feature-section">
@@ -30,6 +52,8 @@
 
                 <div class="cta-info">
                     <p class="feature-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, hic architecto sunt voluptatum praesentium minus delectus? Labore fugiat incidunt nobis aliquid? Autem, odit quidem facilis itaque debitis accusamus perspiciatis optio!</p>
+
+                    <button type="button" class="btn btn-primary cta-btn btn--center">Get Started</button>
                 </div>
 
             </div>
@@ -40,20 +64,20 @@
         </section>
         <section class="feature-table">
                 <div class="column-half feature-list">
-                        <div class="card">
-                            <table class="table">
-                                <tr>
-                                    <td><i class="fas fa-check"></i> Profiles</td>
-                                    <td><i class="fas fa-check"></i> Trip Listings</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-check"></i> Trip Details</td>
-                                    <td><i class="fas fa-check"></i> Private/Pro Trip option</td>
-                                </tr>
-                            </table>
-                            <button type="button" class="btn btn-primary cta-btn">Get Started</button>
-                        </div>
+                    <div class="card">
+                        <table class="table">
+                            <tr>
+                                <td><i class="fas fa-check"></i> Profiles</td>
+                                <td><i class="fas fa-check"></i> Trip Listings</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-check"></i> Trip Details</td>
+                                <td><i class="fas fa-check"></i> Private/Pro Trip option</td>
+                            </tr>
+                        </table>
+                        <button type="button" class="btn btn-secondary feature-btn btn--center">Get Started</button>
                     </div>
+                </div>
         </section>
         <section class="features">
 
@@ -108,7 +132,7 @@
                 </div>
             </section>
             <footer>
-                <h4><a class="nav-link link" href="./index.html">GuidR</a></h4>
+                <a class="nav-link brand" href="index.html">GuidR</a>
                 <p>&copy; 2019 GuidR</p>
             </footer>
     </div>
