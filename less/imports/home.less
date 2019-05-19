@@ -1,0 +1,151 @@
+.home {
+    background-color: @bg-color;
+
+    header {
+        padding-top: 30px;
+
+        @media @desktop {
+            padding-top: 0px;
+        }
+    }
+
+    h2 {
+        font-family   : 'Pacifico', cursive;
+        padding-bottom: 20px;
+
+    }
+
+    .cta {
+
+        @media @desktop {
+          
+            padding            : 100px 0;
+            background-image   : url("/imgs/worldA.png");
+            background-repeat  : no-repeat;
+            background-position: center;
+            background-size    : contain;
+        }
+
+        margin-top    :30px;
+        display       :flex;
+        flex-direction: column;
+        align-items   : center;
+
+        .cta-content {
+            padding-bottom : 30px;
+            width          : 100%;
+            text-align     : center;
+            display        : flex;
+            justify-content: center;
+
+            @media @desktop {
+
+                width          : 80%;
+                display        : flex;
+                justify-content: flex-start;
+
+
+            }
+
+            .content-wrapper {
+                width        : 50%;
+                border-radius: 15px;
+
+                @media @desktop {
+                    padding: 25px;
+                }
+                
+
+            .btn {
+
+                color           : #3f3f46;
+                background-color: #98cb6c;
+                border          : none;
+
+                margin-top: 20px;
+                width     : 100%;
+                padding   : 5px 0 5px 0;
+                font-size : 2rem;
+            }
+
+            h1 {
+
+                padding-top: 20px;
+                font-family: 'Pacifico', sans-serif;
+
+                font-size: 4rem;
+                color    : #3f3f46;
+               
+                @media @desktop{
+                    font-size:8rem;
+                }
+            }
+
+        }
+
+    }
+}
+
+//end cta
+
+
+.main-content {
+   
+    background-color: #98cb6c;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+
+    @media @desktop {
+        width      : 100%;
+        align-items: left;
+        background:linear-gradient(
+            -45deg,
+            rgb(53, 134, 84),
+            #98cb6c 500px,
+            #2d474f 500px
+    
+           
+     
+        );
+    }
+
+
+
+    .content {
+
+        margin-top: 40px;
+        color     : white;
+        width     : 90%;
+
+        @media @desktop {
+            width: 90%;
+
+            &:nth-child(2) {
+                text-align: right;
+            }
+
+        }
+
+    }
+
+}
+
+
+//end main-content
+.bottom-content {
+     
+    
+    .content {
+        text-align: center;
+        margin-top: 40px;
+        color     : white;
+
+    }
+
+    .testimonials1 {
+        width        : 25%;
+        border-radius: 50%;
+    }
+}
+}
