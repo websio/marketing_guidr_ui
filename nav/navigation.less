@@ -1,50 +1,65 @@
-
-.nav{
-    padding-top:10px;
-    width:100%;
-    display:flex;
-    justify-content: center;
+.nav {
+    padding:10px 10px;
+    width           : 100%;
+    display         : flex;
     
+    background-color: rgb(255, 255, 255);
+
 
     @media @desktop {
-        flex-direction:row;
-        justify-content: space-between; 
-         
-   
-    }
-    .target-links{
-        width:100%;
-        display:flex;
-        
-     @media @desktop {
-         display:flex;
-         width:30%;
-         justify-content: space-around;
-    }
-   }
-    .nav-link{
-    text-decoration: none;
-    font-size: 2rem;
-    color:white;
+        border-bottom:2px solid white;
+        background-color:@bg-color;
+        flex-direction : row;
+        justify-content: space-between;
 
-    &.highlight {
-        color: @iron;
+
+
     }
 
- }
-    .links-hidden{
-        display:none;
-        @media @desktop{
-            display:block;
-        }
-    }
-    .menu{
-        @media @desktop{
-            display:none
-        }
-    }
-    .brand{
-        font-size:3rem;
-    }
     
+    
+    .nav-link {
+        text-decoration: none;
+        font-size      : 2rem;
+        color          : rgb(53, 156, 204);
+        font-family: 'Fjalla One', sans-serif;
+        &:hover{
+            color:#3f3f46;
+        }
+        @media @desktop{
+            color:white;
+            margin-right: 20px;
+        }
+
+        &.highlight {
+            color: @iron;
+        }
+
+    }
+
+    .target-links {
+        display: none;
+       
+        @media @desktop {
+            width:40%;
+            display:flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+
+    .menu {
+        margin-right: 30%;
+        @media @desktop {
+            display: none
+        }
+    }
+
+    .brand {
+        font-size: 3rem;
+        @media @desktop {
+            margin-left:10px;
+        }
+    }
+
 }

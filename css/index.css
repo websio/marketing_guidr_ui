@@ -166,56 +166,68 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
 .nav {
-  padding-top: 10px;
+  padding: 10px 10px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  background-color: #ffffff;
 }
-@media (min-width: 500px) {
+@media (min-width: 501px) {
   .nav {
+    border-bottom: 2px solid white;
+    background-color: #1D90B7;
     flex-direction: row;
     justify-content: space-between;
-  }
-}
-.nav .target-links {
-  width: 100%;
-  display: flex;
-}
-@media (min-width: 500px) {
-  .nav .target-links {
-    display: flex;
-    width: 30%;
-    justify-content: space-around;
   }
 }
 .nav .nav-link {
   text-decoration: none;
   font-size: 2rem;
-  color: white;
+  color: #359ccc;
+  font-family: 'Fjalla One', sans-serif;
+}
+.nav .nav-link:hover {
+  color: #3f3f46;
+}
+@media (min-width: 501px) {
+  .nav .nav-link {
+    color: white;
+    margin-right: 20px;
+  }
 }
 .nav .nav-link.highlight {
   color: #CFD0D0;
 }
-.nav .links-hidden {
+.nav .target-links {
   display: none;
 }
-@media (min-width: 500px) {
-  .nav .links-hidden {
-    display: block;
+@media (min-width: 501px) {
+  .nav .target-links {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
-@media (min-width: 500px) {
+.nav .menu {
+  margin-right: 30%;
+}
+@media (min-width: 501px) {
   .nav .menu {
     display: none;
   }
 }
 .nav .brand {
   font-size: 3rem;
+}
+@media (min-width: 501px) {
+  .nav .brand {
+    margin-left: 10px;
+  }
 }
 footer {
   margin-top: 3rem;
@@ -227,6 +239,14 @@ footer {
 .home {
   background-color: #1D90B7;
 }
+.home header {
+  padding-top: 30px;
+}
+@media (min-width: 501px) {
+  .home header {
+    padding-top: 0px;
+  }
+}
 .home h2 {
   font-family: 'Pacifico', cursive;
   padding-bottom: 20px;
@@ -237,7 +257,7 @@ footer {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 500px) {
+@media (min-width: 501px) {
   .home .cta {
     padding: 100px 0;
     background-image: url("/imgs/worldA.png");
@@ -247,10 +267,13 @@ footer {
   }
 }
 .home .cta .cta-content {
+  padding-bottom: 30px;
   width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
-@media (min-width: 500px) {
+@media (min-width: 501px) {
   .home .cta .cta-content {
     width: 80%;
     display: flex;
@@ -261,57 +284,63 @@ footer {
   width: 50%;
   border-radius: 15px;
 }
-@media (min-width: 500px) {
+@media (min-width: 501px) {
   .home .cta .cta-content .content-wrapper {
     padding: 25px;
   }
 }
-.home .cta .cta-content .btn {
-  color: white;
-  background-color: #0062B5;
+.home .cta .cta-content .content-wrapper .btn {
+  color: #3f3f46;
+  background-color: #98cb6c;
   border: none;
   margin-top: 20px;
   width: 100%;
   padding: 5px 0 5px 0;
   font-size: 2rem;
 }
-.home .cta .cta-content h1 {
+.home .cta .cta-content .content-wrapper h1 {
   padding-top: 20px;
-  font-family: 'Pacifico', cursive;
-  font-size: 8rem;
+  font-family: 'Pacifico', sans-serif;
+  font-size: 4rem;
   color: #3f3f46;
 }
-.main-content {
-  background: #ffa378;
+@media (min-width: 501px) {
+  .home .cta .cta-content .content-wrapper h1 {
+    font-size: 8rem;
+  }
+}
+.home .main-content {
+  background-color: #98cb6c;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 500px) {
-  .main-content {
+@media (min-width: 501px) {
+  .home .main-content {
     width: 100%;
     align-items: left;
+    background: linear-gradient(-45deg, #358654, #98cb6c 500px, #2d474f 500px);
   }
 }
-.main-content .content {
+.home .main-content .content {
   margin-top: 40px;
   color: white;
   width: 90%;
 }
-@media (min-width: 500px) {
-  .main-content .content {
+@media (min-width: 501px) {
+  .home .main-content .content {
     width: 90%;
   }
-  .main-content .content:nth-child(2) {
+  .home .main-content .content:nth-child(2) {
     text-align: right;
   }
 }
-.bottom-content .content {
+.home .bottom-content .content {
   text-align: center;
   margin-top: 40px;
   color: white;
 }
-.bottom-content .testimonials1 {
+.home .bottom-content .testimonials1 {
   width: 25%;
   border-radius: 50%;
 }
@@ -345,6 +374,11 @@ footer {
 .main-container .features-cta-section {
   border-bottom: 2px solid #FFFFFF;
   padding-bottom: 2.5rem;
+}
+@media (min-width: 501px) {
+  .main-container .features-cta-section {
+    display: flex;
+  }
 }
 .main-container .feature-info {
   margin: 1.5rem 0;
