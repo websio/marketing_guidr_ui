@@ -404,6 +404,15 @@ footer {
   margin-top: 40px;
   color: white;
 }
+.home .bottom-content .cards {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 501px) {
+  .home .bottom-content .cards {
+    flex-direction: row;
+  }
+}
 .home .bottom-content .testimonials1 {
   width: 25%;
   border-radius: 50%;
