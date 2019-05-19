@@ -14,6 +14,11 @@
         border-radius: 10px;
     }
 
+    .btn--center {
+        display: block;
+        margin: 0 auto;
+    }
+
     .features-cta-section {
         border-bottom: 2px solid @white;
         padding-bottom: 2.5rem;
@@ -54,6 +59,7 @@
             order: 10; //third item
           }
         }
+       
         .cta-info {
           @media @desktop {
             order: 3; // second item
@@ -92,24 +98,20 @@
 
     // CTA BUTTON 
     .btn-primary {
-        border-radius: 10px;
         background-color: lighten(@bg-color, 20%);
         color: @mine-shaft;
         
-    
         &:hover {
             background-color: @btn-primary;
             color: @white;  
         }
     }
     .btn {
+        border-radius: 10px;
         font-size: 2.5rem;
         padding: 0.5rem 1rem;
     }
-    .cta-btn {
-        display: block;
-        margin: 0 auto;
-    }
+    
     
     .features {
         margin-top: 2.75rem;
