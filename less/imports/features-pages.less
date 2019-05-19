@@ -2,7 +2,8 @@
 // not sure wether top 2 will go in container or not yet..
 .main-container {
 
-    background-color: #008FB3;
+    background-color: @bg-color;
+    padding: 0 5%;
   
     .nav {
         margin-top: 2.5rem;
@@ -11,21 +12,14 @@
         
     }
 
-    padding: 0 5%;
+   
 
     .center {
         padding: 2.5rem 3rem;
         text-align: center;
     }
 
-    body {
-        background-color: @bg-color;
-     }
      
-     
-     h1 {
-         color: @white;
-     }
      header {
          margin-bottom: 2.5rem;
          padding-bottom: 2.25rem;
@@ -40,12 +34,55 @@
     .features-cta-section {
         border-bottom: 2px solid @white;
         padding-bottom: 2.5rem;
-
+        margin-bottom: 2.75rem;
+      }
+      .feature-section {
         @media @desktop {
-            display: flex;
+          display: flex;
         }
-    }
     
+        .cta-phrase {
+
+            h1,p {
+                color: @white;
+            }
+           
+          @media @desktop {
+            display:flex;
+            flex-direction: column;
+    
+            padding: 1.75rem;
+            align-self: flex-start;
+            width: 45%;
+           
+          }
+        .cta-img-mobile{
+          @media @desktop{
+            display:none;
+          }
+        }
+        }
+    
+        .cta-img {
+          display: none;
+          @media @desktop {
+            display:block;
+            max-width: 50%;
+            order: 10; //third item
+          }
+        }
+        .cta-info {
+          @media @desktop {
+            order: 3; // second item
+    
+            display: inline-flex;
+            flex-direction: column;
+            align-self: flex-end;
+          }
+        }
+      }
+
+      
     .feature-info {
         margin: 1.5rem 0;
         color: @white;
@@ -69,11 +106,6 @@
             padding: 0.5rem;
         }
     }
-    
-    .features-cta-section {
-        display: flex;
-    }
-    
 
     // CTA BUTTON 
     .btn-primary {
