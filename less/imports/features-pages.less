@@ -111,7 +111,17 @@
         }
         .list-right {
           text-align: right;
+          @media @desktop {
+           text-align: left;
+          }
         }
+        .list-left {
+          text-align: left;
+          @media @desktop {
+            text-align: right;
+          }
+        }
+
         .list {
           font-size: 1.8rem;
           width: 25rem;
