@@ -15,7 +15,10 @@
         padding: 2.5rem 3rem;
         text-align: center;
     } 
-    
+    .lg-font {
+      font-size: 2.5rem;
+      color: @btn-primary;
+    }
     .halfs-max {
         border-radius: 10px;
     }
@@ -94,14 +97,17 @@
         background-color: @white;
         border-radius: 10px;
         padding: 1.5rem 1rem;
-        margin: 0 20%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0;
+
+        @media @desktop {
+          margin: 0 20%;
+        }
 
         .row {
           max-width: 80%;
-          border: 1px solid red;
         }
         .list-right {
           text-align: right;
