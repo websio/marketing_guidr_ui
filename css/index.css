@@ -399,8 +399,12 @@ footer {
     text-align: right;
   }
 }
-.home .bottom-content .testimonials {
+.home .bottom-content .testimonial {
   padding-top: 50px;
+  display: none;
+}
+.home .bottom-content .selected {
+  display: block;
 }
 .home .bottom-content .content {
   text-align: center;
@@ -424,7 +428,7 @@ footer {
     flex-direction: row;
   }
 }
-.home .bottom-content .testimonials1 {
+.home .bottom-content .testimonial-img {
   width: 25%;
   border-radius: 50%;
 }
