@@ -1,17 +1,20 @@
 .features {
     margin-top: 2.75rem;
-  }
-
-  .feature {
-    margin: 20px 10%;
-    padding: 0 20px 25px;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-    background-color: white;
-    position: relative;
-    height: 75px;
-    overflow: hidden;
-    box-shadow: 2px 2px 2px darken(@bg-color, 25%);
+}
+    .feature {
+      margin: 20px 10%;
+      padding: 0 20px 25px;
+      border: 1px solid lightgrey;
+      border-radius: 10px;
+      background-color: white;
+      position: relative;
+      height: 50px;
+      overflow: hidden;
+      box-shadow: 2px 2px 2px lightgrey;
+    
+      span {
+          font-size: 3.5rem;
+      }
   
     .columns-mobile {
       display: flex;
@@ -32,10 +35,16 @@
    }
 
     h2 {
+      color: @bg-color;
       font-size: 28px;
       padding-bottom: 1rem;
       margin: 15px 0 0;
+      display: inline-block;
 
+    }
+   
+    .drop--right {
+      padding-left: 60%;
     }
     .row {
         padding-top: 2.5rem;
@@ -57,7 +66,7 @@
       background-color: white;
     }
    
-  }
+  } // feature end
   
   .feature-open {
     height: 400px;
