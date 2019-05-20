@@ -124,7 +124,9 @@
         }
 
     }
-
+    .mid-img{
+        width:100%
+    }
 
     //end main-content
     .bottom-content {
@@ -145,7 +147,12 @@
             margin-top    : 50px;
             display       : flex;
             flex-direction: column;
+            @media @desktop {
+                flex-direction: row;
+                justify-content: space-around;
 
+                
+            }
             h2 {
                 margin-top: 20px;
             }
@@ -154,17 +161,13 @@
                 background: linear-gradient(#2a494f,
                         #24576b 100px);
                 padding: 40px 10px;
-                border : 20px solid @bg-color;
+                width:30%;
+                border-radius:15px;
 
 
             }
 
-            @media @desktop {
-                flex-direction: row;
-
-
-                .secure {}
-            }
+            
         }
 
         .testimonial-img {
