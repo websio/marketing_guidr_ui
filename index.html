@@ -11,26 +11,26 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
-   
+
 
     <title>GuidR</title>
 </head>
 
 <body>
     <div class="container home">
-        
+
         <header>
             <nav class="nav ">
                 <div id="navBlurDiv" class="side-hide"></div>
                 <div id="sideNavDiv" class="side-hide sideNavDiv">
-                   <div class="menu-div"> <i class="fas fa-bars fa-3x menu-close"></i></div>
-                   
+                    <div class="menu-div"> <i class="fas fa-bars fa-3x menu-close"></i></div>
+
                     <div class="mobile-links ">
                         <a class="nav-link mobile-brand" href="index.html">GuidR</a>
 
                         <a class="nav-link " href="features.html">Features</a>
                         <a class="nav-link " href="#">About Us</a>
-    
+
                     </div>
                 </div>
                 <i class="fas fa-bars fa-3x menu"></i>
@@ -44,7 +44,7 @@
                 </div>
 
             </nav>
-            
+
         </header>
 
         <section class="cta">
@@ -57,7 +57,7 @@
                 </div>
             </div>
 
-        </section> 
+        </section>
         <section class="main-content">
 
 
@@ -83,32 +83,71 @@
             </div>
         </section>
 
-        <img class="mid-img" src="https://picsum.photos/1000/400" alt="" class="cta-img">
+        <div class="mid-img"><img src="imgs/hiker.jpg""></div>
         <section class="bottom-content">
-            <div class="content">
-                <img class="testimonials1" src="imgs/testimonial1.jpg" alt="" class="cta-img">
 
+            <div class="content testimonial" data-tab='1'>
+                <img class="testimonial-img" src="imgs/testimonial1.jpg" alt="" class="cta-img">
+            
                 <h2>Susan person</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nemo! Nam unde aliquid consequuntur
                     dolores temporibus. Quasi perspiciatis veritatis quisquam.</p>
-
-
+            
+            
             </div>
-
-            <div class="content">
-                <h2>lorem</h2>
+            <div class="content testimonial" data-tab='2'>
+                <img class="testimonial-img" src="imgs/testimonial1.jpg" alt="" class="cta-img">
+            
+                <h2>tim person</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nemo! Nam unde aliquid consequuntur
                     dolores temporibus. Quasi perspiciatis veritatis quisquam.</p>
-
+            
+            
             </div>
-            <div class="content">
-                <h2>lorem</h2>
+            <div class="content testimonial " data-tab='3'>
+                <img class="testimonial-img" src="imgs/testimonial1.jpg" alt="" class="cta-img">
+            
+                <h2>mary person</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nemo! Nam unde aliquid consequuntur
                     dolores temporibus. Quasi perspiciatis veritatis quisquam.</p>
+            
+            
+            </div>
+            <div class="cards">
+                <div class="secure content">
+                    <i class="fas fa-lock fa-5x"></i>
+                    <h2>Secure</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nemo! Nam unde aliquid
+                        consequuntur
+                        dolores temporibus. Quasi perspiciatis veritatis quisquam.</p>
 
+                </div>
+                <div class="professional content">
+                    <i class="fas fa-user-tie fa-5x"></i>
+                    <h2>Professional</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nemo! Nam unde aliquid
+                        consequuntur
+                        dolores temporibus. Quasi perspiciatis veritatis quisquam.</p>
+
+                </div>
+                <div class="feat content">
+                    <i class="fas fa-map-marked-alt fa-5x"></i>
+                    <h2>Features</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nemo! Nam unde aliquid
+                        consequuntur
+                        dolores temporibus. Quasi perspiciatis veritatis quisquam.</p>
+
+                </div>
             </div>
         </section>
+        <footer>
+            <h4><a class="nav-link link" href="./index.html">GuidR</a></h4>
+            <p>&copy; 2019 GuidR</p>
+        </footer>
     </div>
 </body>
 <script src="nav/navigation.js"></script>
+<script src="js/indexCarousel.js"></script>
+
+
 </html>

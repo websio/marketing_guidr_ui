@@ -331,6 +331,7 @@ footer {
   text-align: center;
   display: flex;
   justify-content: center;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.9);
 }
 @media (min-width: 501px) {
   .home .cta .cta-content {
@@ -369,6 +370,8 @@ footer {
   }
 }
 .home .main-content {
+  color: white;
+  text-shadow: 0px 2px 3px #000000;
   background-color: #98cb6c;
   display: flex;
   flex-direction: column;
@@ -385,27 +388,60 @@ footer {
   margin-top: 40px;
   color: white;
   width: 90%;
+  text-align: center;
 }
 @media (min-width: 501px) {
   .home .main-content .content {
     width: 90%;
+    text-align: left;
   }
   .home .main-content .content:nth-child(2) {
     text-align: right;
   }
 }
+.home .bottom-content .testimonial {
+  padding-top: 50px;
+  display: none;
+}
+.home .bottom-content .selected {
+  display: block;
+}
 .home .bottom-content .content {
   text-align: center;
-  margin-top: 40px;
   color: white;
 }
-.home .bottom-content .testimonials1 {
+.home .bottom-content .cards {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.home .bottom-content .cards h2 {
+  margin-top: 20px;
+}
+.home .bottom-content .cards .content {
+  background: linear-gradient(#2a494f, #24576b 100px);
+  padding: 40px 10px;
+  border: 20px solid #1D90B7;
+}
+@media (min-width: 501px) {
+  .home .bottom-content .cards {
+    flex-direction: row;
+  }
+}
+.home .bottom-content .testimonial-img {
   width: 25%;
   border-radius: 50%;
 }
 .main-container {
   background-color: #1D90B7;
   padding: 0 5%;
+  margin: 0 auto;
+}
+@media (min-width: 501px) {
+  .main-container {
+    max-width: 90%;
+    padding: 0;
+  }
 }
 .main-container .center {
   padding: 2.5rem 3rem;
@@ -414,10 +450,21 @@ footer {
 .main-container .halfs-max {
   border-radius: 10px;
 }
+.main-container .btn--center {
+  display: block;
+  margin: 0 auto;
+}
 .main-container .features-cta-section {
+  margin: 0 auto;
+  width: 90%;
   border-bottom: 2px solid #FFFFFF;
   padding-bottom: 2.5rem;
   margin-bottom: 2.75rem;
+}
+@media (min-width: 501px) {
+  .main-container .features-cta-section {
+    margin-top: 2.75rem;
+  }
 }
 @media (min-width: 501px) {
   .main-container .feature-section {
@@ -468,6 +515,7 @@ footer {
   background-color: #FFFFFF;
   border-radius: 10px;
   padding: 1.5rem 1rem;
+  margin: 0 10%;
 }
 .main-container .table {
   margin: 0 auto 1.5rem;
@@ -477,7 +525,6 @@ footer {
   padding: 0.5rem;
 }
 .main-container .btn-primary {
-  border-radius: 10px;
   background-color: #56c0e4;
   color: #363636;
 }
@@ -485,16 +532,21 @@ footer {
   background-color: #0092B5;
   color: #FFFFFF;
 }
+.main-container .btn-secondary {
+  background-color: #2D474F;
+  border: 1px solid #CFD0D0;
+  color: #FFFFFF;
+}
+.main-container .btn-secondary:hover {
+  background-color: #0092B5;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px #1D90B7;
+}
 .main-container .btn {
+  border-radius: 10px;
   font-size: 2.5rem;
   padding: 0.5rem 1rem;
-}
-.main-container .cta-btn {
-  display: block;
-  margin: 0 auto;
-}
-.main-container .features {
-  margin-top: 2.75rem;
+  box-shadow: 2px 2px 2px #0c3949;
 }
 .main-container .row {
   display: flex;
@@ -513,7 +565,7 @@ footer {
   padding: 0 1.25rem 0 1.25rem;
 }
 .features {
-  margin-top: 95px;
+  margin-top: 2.75rem;
 }
 .feature {
   margin: 20px 10%;
@@ -524,7 +576,7 @@ footer {
   position: relative;
   height: 75px;
   overflow: hidden;
-  box-shadow: 2px 2px 2px lightgrey;
+  box-shadow: 2px 2px 2px #0c3949;
 }
 .feature h2 {
   font-size: 28px;
