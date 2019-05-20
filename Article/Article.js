@@ -4,10 +4,10 @@ class Article {
         this.expandButton = this.domElement.querySelector('.expandButton');
         this.expandButton.innerText = 'Expand';
 
-        this.expandButton.eventListener('click', () => expandArticle());
+        this.expandButton.addEventListener('click', () => this.expandFeature());
     }
-    expandArticle() {
-        this.domElement.toggle('feature-open');
+    expandFeature() {
+        this.domElement.classList.toggle('feature-open');
         if (this.domElement.classList.contains('feature-open')) {
             this.expandButton.textContent = 'Close';
           } else {
@@ -21,4 +21,3 @@ const features = document.querySelectorAll('.feature');
 features.forEach(article => {
     return new Article(article);
 });
-//console.log(features);
