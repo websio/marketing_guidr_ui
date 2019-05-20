@@ -24,7 +24,6 @@
         display: block;
         margin: 0 auto;
     }
-
     .features-cta-section {
         margin: 0 auto;
         width: 90%;;
@@ -95,17 +94,25 @@
         background-color: @white;
         border-radius: 10px;
         padding: 1.5rem 1rem;
-        margin: 0 10%;
+        margin: 0 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .row {
+          max-width: 75%;
+        }
+        .list {
+          font-size: 1.8rem;
+          width: 25rem;
+          padding: 1.25rem;
+      }
+      .fa-space {
+        padding-right: 0.35rem;
+      }
+
     }
     
-    .table {
-        margin: 0 auto 1.5rem;
-
-        td {
-            font-size: 1.8rem;
-            padding: 0.5rem;
-        }
-    }
 
     // CTA BUTTON 
     .btn-primary {
