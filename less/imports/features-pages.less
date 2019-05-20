@@ -15,7 +15,10 @@
         padding: 2.5rem 3rem;
         text-align: center;
     } 
-    
+    .lg-font {
+      font-size: 2.5rem;
+      color: @btn-primary;
+    }
     .halfs-max {
         border-radius: 10px;
     }
@@ -24,7 +27,6 @@
         display: block;
         margin: 0 auto;
     }
-
     .features-cta-section {
         margin: 0 auto;
         width: 90%;;
@@ -95,17 +97,32 @@
         background-color: @white;
         border-radius: 10px;
         padding: 1.5rem 1rem;
-        margin: 0 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+
+        @media @desktop {
+          margin: 0 20%;
+        }
+
+        .row {
+          max-width: 80%;
+        }
+        .list-right {
+          text-align: right;
+        }
+        .list {
+          font-size: 1.8rem;
+          width: 25rem;
+          padding: 1.25rem;
+      }
+      .fa-space {
+        padding-right: 0.35rem;
+      }
+
     }
     
-    .table {
-        margin: 0 auto 1.5rem;
-
-        td {
-            font-size: 1.8rem;
-            padding: 0.5rem;
-        }
-    }
 
     // CTA BUTTON 
     .btn-primary {
