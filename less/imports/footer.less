@@ -9,7 +9,36 @@ footer {
     margin-top: 3rem;
     margin: 0 auto;
     padding-top: 2.75rem;
-    
-    
-    
+
+
+    .menu {
+        margin-right: 30%;
+        @media @desktop {
+            display: none
+        }
+    }
+
+    .brand {
+        font-size: 3rem;
+        @media @desktop {
+            margin-left:10px;
+        }
+    }
+
+    .link-footer {
+        text-decoration: none;
+        color          : @white;
+        &:hover{
+            color:#3f3f46;
+        }
+        @media @desktop{
+            color:white;
+            margin-right: 20px;
+        }
+
+        &.highlight {
+            color: @iron;
+        }
+
+    }
 }
