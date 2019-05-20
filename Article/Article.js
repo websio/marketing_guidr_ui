@@ -6,21 +6,20 @@ class Article {
         //this.expandButton.innerText = 'Expand';
         this.dropDown.classList.add('fas');
         this.dropDown.classList.add('fa-caret-square-down');
-        this.dropDown.classList.add('fa-x3');
         this.dropDown.classList.add('drop--right')
         console.log(this.dropDown);
         this.headline = this.domElement.querySelector('.headline');
 
-        // this.expandButton.addEventListener('click', () => this.expandFeature());
+        this.dropDown.addEventListener('click', () => this.expandFeature());
     }
-    // expandFeature() {
-    //     this.domElement.classList.toggle('feature-open');
-    //     if (this.domElement.classList.contains('feature-open')) {
-    //         this.expandButton.textContent = 'Close';
-    //       } else {
-    //         this.expandButton.textContent = 'Expand';
-    //       }
-    //     }  
+    expandFeature() {
+        this.domElement.classList.toggle('feature-open');
+        if (this.domElement.classList.contains('feature-open')) {
+            this.expandButton.textContent = 'Close';
+          } else {
+            this.expandButton.textContent = 'Expand';
+          }
+        }  
 }
 
 
