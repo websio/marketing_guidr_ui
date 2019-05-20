@@ -297,11 +297,45 @@ header {
   }
 }
 footer {
-  margin-top: 3rem;
-  padding-top: 2.75rem;
   border-top: 2px solid #FFFFFF;
   display: flex;
   justify-content: space-between;
+  max-width: 90%;
+  margin-top: 3rem;
+  margin: 0 auto;
+  padding-top: 2.75rem;
+}
+footer .menu {
+  margin-right: 30%;
+}
+@media (min-width: 501px) {
+  footer .menu {
+    display: none;
+  }
+}
+footer .brand {
+  font-size: 3rem;
+}
+@media (min-width: 501px) {
+  footer .brand {
+    margin-left: 10px;
+  }
+}
+footer .link-footer {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+footer .link-footer:hover {
+  color: #3f3f46;
+}
+@media (min-width: 501px) {
+  footer .link-footer {
+    color: white;
+    margin-right: 20px;
+  }
+}
+footer .link-footer.highlight {
+  color: #CFD0D0;
 }
 .home {
   background-color: #1D90B7;
@@ -399,6 +433,9 @@ footer {
     text-align: right;
   }
 }
+.home .mid-img {
+  width: 100%;
+}
 .home .bottom-content .testimonial {
   padding-top: 50px;
   display: none;
@@ -414,18 +451,28 @@ footer {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+@media (min-width: 501px) {
+  .home .bottom-content .cards {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 .home .bottom-content .cards h2 {
   margin-top: 20px;
 }
 .home .bottom-content .cards .content {
+  margin-bottom: 40px;
+  width: 90%;
   background: linear-gradient(#2a494f, #24576b 100px);
   padding: 40px 10px;
-  border: 20px solid #1D90B7;
+  border-radius: 15px;
 }
 @media (min-width: 501px) {
-  .home .bottom-content .cards {
-    flex-direction: row;
+  .home .bottom-content .cards .content {
+    width: 30%;
   }
 }
 .home .bottom-content .testimonial-img {
@@ -446,6 +493,10 @@ footer {
 .main-container .center {
   padding: 2.5rem 3rem;
   text-align: center;
+}
+.main-container .lg-font {
+  font-size: 2.5rem;
+  color: #0092B5;
 }
 .main-container .halfs-max {
   border-radius: 10px;
@@ -515,14 +566,29 @@ footer {
   background-color: #FFFFFF;
   border-radius: 10px;
   padding: 1.5rem 1rem;
-  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
 }
-.main-container .table {
-  margin: 0 auto 1.5rem;
+@media (min-width: 501px) {
+  .main-container .card {
+    margin: 0 20%;
+  }
 }
-.main-container .table td {
+.main-container .card .row {
+  max-width: 80%;
+}
+.main-container .card .list-right {
+  text-align: right;
+}
+.main-container .card .list {
   font-size: 1.8rem;
-  padding: 0.5rem;
+  width: 25rem;
+  padding: 1.25rem;
+}
+.main-container .card .fa-space {
+  padding-right: 0.35rem;
 }
 .main-container .btn-primary {
   background-color: #56c0e4;
