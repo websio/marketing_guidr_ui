@@ -130,20 +130,38 @@
 
 //end main-content
 .bottom-content {
-     
+    .testimonials{
+        padding-top:50px;
+    } 
     
     .content {
-        text-align: center;
-        margin-top: 40px;
+        text-align: center;        
         color     : white;
 
     }
     .cards{
+        margin-top:50px;
         display:flex;
         flex-direction:column;
+        h2 {
+            margin-top:20px;
+        }
+        .content{
+            background:linear-gradient(
+            #2a494f,
+            #24576b 100px);
+            padding:40px 10px;
+            border:20px solid @bg-color;
+            border-radius: 5px;
+
+         }
         @media @desktop{
             flex-direction:row;
-            
+           
+           
+             .secure{
+                 
+             }
         }
     }
     .testimonials1 {
