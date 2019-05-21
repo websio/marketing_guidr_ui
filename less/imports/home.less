@@ -10,14 +10,15 @@
     }
 
     .cta {
+        background-image   : url("../imgs/worldA.png");
+        background-repeat  : no-repeat;
+        background-position: center;
+        background-size    : contain;
 
         @media @desktop {
 
             padding            : 100px 0;
-            background-image   : url("/imgs/worldA.png");
-            background-repeat  : no-repeat;
-            background-position: center;
-            background-size    : contain;
+            
         }
 
         margin-top    :30px;
@@ -68,7 +69,7 @@
                     padding-top: 20px;
                     font-family: 'Pacifico', sans-serif;
 
-                    font-size: 4rem;
+                    font-size: 5rem;
                     color    : #3f3f46;
 
                     @media @desktop {
@@ -130,16 +131,28 @@
 
     //end main-content
     .bottom-content {
+       
         .testimonial {
             padding-top: 50px;
-            display:none;
+            img {
+                width        : 40%;
+                border-radius: 50%;
+            @media @desktop{
+                width:25%;
+            }
+            }
+
+            p{
+                padding:10px 0;
+                margin:0 5%;
+                background:rgba(0, 0, 0, .4);
+                border-radius:10px;    
+            }
         }
-        .selected{
-         display:block;
-        }
+        
         .content {
             text-align: center;
-            color     : white;
+            color:white;
 
         }
 
@@ -168,19 +181,33 @@
                         #24576b 100px);
                 padding: 40px 10px;
                 border-radius:15px;
+
                 @media @desktop {
                     width:30%;
                 }
+                .btn {
 
+                    color           : #3f3f46;
+                    background-color: #98cb6c;
+                    border          : none;
+                    border-radius:5px;
+                    margin-top: 20px;
+                    width     : 100%;
+                    padding   : 5px 0 5px 0;
+                    font-size : 2.5rem;
+                    box-shadow: 0px 4px 4px 0px #2e7c86;
+                &:hover{
+                    background:@bg-color;
+                    color:white;
+                }    
+
+                }
 
             }
 
             
         }
 
-        .testimonial-img {
-            width        : 25%;
-            border-radius: 50%;
-        }
+        
     }
 }
