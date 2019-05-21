@@ -38,12 +38,22 @@
     .columns-mobile {
       display: flex;
       flex-direction: column;
+
+      @media @desktop {
+        flex-direction: row;
+      }
     }
     .img-container {
       display: flex;
       justify-content: center;
       align-content: center;
       width: 100%;
+
+      order: -1;
+
+      @media @desktop {
+        order: 0;
+      }
     }
     .img-thumb {
       max-width: 100%;
@@ -51,7 +61,10 @@
       display: inline-flex;
 
       @media @desktop {
-        height: 35%;
+        width: 100%;
+        height: auto;
+
+
       }
       
     }
@@ -72,6 +85,12 @@
   } // feature end
 
   .feature-open {
-    height: 800px;
+
+    height: 700px;
+
+    @media @desktop {
+      height: 825px;
+    }
+    
   }
 }
