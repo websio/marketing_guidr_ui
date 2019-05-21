@@ -393,6 +393,10 @@ footer .link-footer.highlight {
   padding: 5px 0 5px 0;
   font-size: 2rem;
 }
+.home .cta .cta-content .content-wrapper .btn:hover {
+  background: #79a354;
+  color: white;
+}
 .home .cta .cta-content .content-wrapper h1 {
   padding-top: 20px;
   font-family: 'Pacifico', sans-serif;
