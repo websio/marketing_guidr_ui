@@ -442,6 +442,7 @@ footer .link-footer.highlight {
   width: 100%;
 }
 .home .bottom-content .testimonial {
+  text-align: center;
   padding-top: 50px;
 }
 .home .bottom-content .testimonial img {
