@@ -211,7 +211,7 @@ header {
   background-color: #252525;
   overflow-x: hidden;
   padding-top: 30px;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 .nav .side-show {
   height: 100%;
@@ -220,7 +220,7 @@ header {
   z-index: 2;
   top: 0;
   left: 0;
-  background-color: #00bddf;
+  background-color: #2A484F;
   overflow-x: hidden;
   padding-top: 30px;
 }
@@ -234,9 +234,9 @@ header {
   flex-direction: column;
 }
 .nav .side-show .mobile-links .nav-link {
-  font-size: 3.5rem;
+  font-size: 3rem;
   padding: 10px 0;
-  color: #3d3b3b;
+  color: white;
   font-weight: 900;
 }
 .nav .side-show .mobile-links .nav-link:hover {
@@ -245,7 +245,7 @@ header {
 }
 .nav .side-show .mobile-links .mobile-brand {
   padding-top: 20px;
-  font-size: 5rem;
+  font-size: 3.5rem;
   margin-bottom: 100px;
 }
 .nav .side-hide {
@@ -441,8 +441,13 @@ footer .link-footer.highlight {
   padding-top: 50px;
 }
 .home .bottom-content .testimonial img {
-  width: 25%;
+  width: 40%;
   border-radius: 50%;
+}
+@media (min-width: 501px) {
+  .home .bottom-content .testimonial img {
+    width: 25%;
+  }
 }
 .home .bottom-content .testimonial p {
   padding: 10px 0;
