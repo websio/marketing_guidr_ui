@@ -297,6 +297,7 @@ header {
   }
 }
 footer {
+  background-color: #1D90B7;
   border-top: 2px solid #FFFFFF;
   display: flex;
   justify-content: space-between;
@@ -345,6 +346,10 @@ footer .link-footer.highlight {
   padding-bottom: 20px;
 }
 .home .cta {
+  background-image: url("../imgs/worldA.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -353,10 +358,6 @@ footer .link-footer.highlight {
 @media (min-width: 501px) {
   .home .cta {
     padding: 100px 0;
-    background-image: url("/imgs/worldA.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
   }
 }
 .home .cta .cta-content {
@@ -395,7 +396,7 @@ footer .link-footer.highlight {
 .home .cta .cta-content .content-wrapper h1 {
   padding-top: 20px;
   font-family: 'Pacifico', sans-serif;
-  font-size: 4rem;
+  font-size: 5rem;
   color: #3f3f46;
 }
 @media (min-width: 501px) {
@@ -438,10 +439,16 @@ footer .link-footer.highlight {
 }
 .home .bottom-content .testimonial {
   padding-top: 50px;
-  display: none;
 }
-.home .bottom-content .selected {
-  display: block;
+.home .bottom-content .testimonial img {
+  width: 25%;
+  border-radius: 50%;
+}
+.home .bottom-content .testimonial p {
+  padding: 10px 0;
+  margin: 0 5%;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }
 .home .bottom-content .content {
   text-align: center;
@@ -474,10 +481,6 @@ footer .link-footer.highlight {
   .home .bottom-content .cards .content {
     width: 30%;
   }
-}
-.home .bottom-content .testimonial-img {
-  width: 25%;
-  border-radius: 50%;
 }
 .main-container {
   background-color: #1D90B7;
@@ -573,18 +576,22 @@ footer .link-footer.highlight {
 }
 @media (min-width: 501px) {
   .main-container .card {
-    margin: 0 20%;
+    max-width: 65%;
+    margin: 0 auto;
   }
 }
 .main-container .card .row {
   max-width: 80%;
+}
+.main-container .card .list-left {
+  text-align: left;
 }
 .main-container .card .list-right {
   text-align: right;
 }
 .main-container .card .list {
   font-size: 1.8rem;
-  width: 25rem;
+  max-width: 90%;
   padding: 1.25rem;
 }
 .main-container .card .fa-space {
@@ -624,49 +631,70 @@ footer .link-footer.highlight {
   max-width: 100%;
   height: auto;
 }
-.main-container .row .half {
-  max-width: 50%;
-}
 .main-container .row .pad {
   padding: 0 1.25rem 0 1.25rem;
 }
 .features {
   margin-top: 2.75rem;
 }
-.feature {
+.features .feature {
   margin: 20px 10%;
   padding: 0 20px 25px;
   border: 1px solid lightgrey;
   border-radius: 10px;
   background-color: white;
   position: relative;
-  height: 75px;
+  height: 50px;
   overflow: hidden;
-  box-shadow: 2px 2px 2px #0c3949;
+  box-shadow: 2px 2px 2px lightgrey;
 }
-.feature h2 {
+.features .feature .feature-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.features .feature span {
+  font-size: 3.5rem;
+}
+.features .feature span .btn--close {
+  align-self: baseline;
+}
+.features .feature .columns-mobile {
+  display: flex;
+  flex-direction: column;
+}
+.features .feature .img-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+.features .feature .img-thumb {
+  max-width: 100%;
+  height: 35rem;
+  display: inline-flex;
+}
+@media (min-width: 501px) {
+  .features .feature .img-thumb {
+    height: 35%;
+  }
+}
+.features .feature .half {
+  max-width: 100%;
+}
+.features .feature h2 {
+  color: #1D90B7;
   font-size: 28px;
   padding-bottom: 1rem;
   margin: 15px 0 0;
+  display: inline-block;
 }
-.feature .row {
+.features .feature .row {
   padding-top: 2.5rem;
 }
-.feature .close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+.features .feature-open {
+  height: 800px;
 }
-.feature .expandButton {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  font-size: 12px;
-  color: grey;
-  cursor: pointer;
-  transform: translate(-50%);
-  background-color: white;
-}
-.feature-open {
-  height: 400px;
+.main-container .round {
+  border-radius: 50%;
 }
