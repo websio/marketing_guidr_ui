@@ -360,7 +360,7 @@ footer .copy:hover {
   background-color: #1D90B7;
 }
 .home h2 {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Fjalla One', sans-serif;
   padding-bottom: 20px;
 }
 .home .cta {
@@ -417,7 +417,8 @@ footer .copy:hover {
 }
 .home .cta .cta-content .content-wrapper h1 {
   padding-top: 20px;
-  font-family: 'Pacifico', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 900;
   font-size: 5rem;
   color: #3f3f46;
 }
