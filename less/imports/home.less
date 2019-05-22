@@ -139,7 +139,7 @@
     .bottom-content {
 
         .testimonial {
-
+            color:white;
             text-align : center;
             padding-top: 50px;
 
@@ -160,14 +160,12 @@
             }
         }
 
-        .content {
-            text-align: center;
-            color     : white;
-
+        .break{
+            width:100%;
         }
 
         .cards {
-
+           width:100%;
             margin-top    : 50px;
             display       : flex;
             flex-direction: column;
@@ -175,43 +173,46 @@
             align-items   : center;
 
             @media @desktop {
-                flex-direction : row;
+                flex-wrap:wrap;
+                flex-direction:row;
                 justify-content: space-around;
-
-
             }
-
+            .fas{
+                color:#2d474f;
+            }
             h2 {
-                margin-top: 20px;
+                color:#2d474f;
+                margin: 20px 0;
             }
-
-            .content {
+            .card-content{
+               
+                width:80%;
+                text-align:center;
+                color:black;
                 margin-bottom: 40px;
-                width        : 90%;
-                background   : linear-gradient(#2a494f,
-                        #24576b 100px);
+                background   : white;
                 padding      : 40px 10px;
-                border-radius: 15px;
-
+                box-shadow      : 8px 8px 4px  #2e7c86;
                 @media @desktop {
-                    width: 30%;
+                   width: 40%;
                 }
-
                 .btn {
-
+                   
+                    display:inline-block;
+                    text-decoration: none;
                     color           : #3f3f46;
                     background-color: #98cb6c;
-                    border          : none;
-                    border-radius   : 5px;
-                    margin-top      : 20px;
-                    width           : 100%;
-                    padding         : 5px 0 5px 0;
-                    font-size       : 2.5rem;
-                    box-shadow      : 0px 4px 4px 0px #2e7c86;
-
+                   
+                    
+                    margin-top      : 10px;
+                    width           : 60%;
+                    padding         : 5px 30px ;
+                    font-size       : 2rem;
+                    box-shadow      : 0px 4px 4px 0px #3d3d3d;
                     &:hover {
-                        background: @bg-color;
+                        background: #79a354;
                         color     : white;
+                    
                     }
 
                 }
