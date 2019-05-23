@@ -562,6 +562,9 @@ footer .copy {
 .main-container {
   background-color: #1D90B7;
 }
+.main-container img {
+  width: 100%;
+}
 .main-container .center {
   padding: 2.5rem 3rem;
   text-align: center;
@@ -697,8 +700,13 @@ footer .copy {
 .main-container .row .img-thumb {
   padding: 0.25rem;
   border-radius: 0.5rem;
-  max-width: 100%;
+  width: 65%;
   height: auto;
+}
+@media (min-width: 501px) {
+  .main-container .row .img-thumb {
+    width: 75%;
+  }
 }
 .main-container .row .pad {
   padding: 0 1.25rem 0 1.25rem;
@@ -718,6 +726,12 @@ footer .copy {
   box-shadow: 2px 2px 2px lightgrey;
 }
 .features .feature .feature-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.features .feature .drop--down {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -782,7 +796,7 @@ footer .copy {
   padding-top: 2.5rem;
 }
 .features .feature-open {
-  height: 645px;
+  height: 545px;
 }
 @media (min-width: 501px) {
   .features .feature-open {
