@@ -4,6 +4,9 @@
 
     background-color: @bg-color;
 
+    img {
+      width: 100%;
+    }
     
     .center {
         padding: 2.5rem 3rem;
@@ -157,9 +160,11 @@
         .img-thumb {
             padding: 0.25rem;
             border-radius: 0.5rem;
-            max-width: 100%;
+            width: 65%;
             height: auto;
-            
+            @media @desktop {
+              width: 75%;
+            }
         }
         
         .pad {
