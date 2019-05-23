@@ -1,0 +1,31 @@
+.container {
+    .Scrollbar {
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        bottom: 5px;
+        right: 0px;
+        font-size: 3.5rem;
+        opacity: 0.3;
+        scroll-behavior: smooth;
+
+      &:hover {
+          opacity: 0.7;
+      }
+    }
+
+    .scroll--bar {
+        font-size: 5rem;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+
+        @media @desktop {
+            right: 5;
+        }
+        @media (min-width: 1200px) {
+            right: 12%;
+        }
+    }
+    
+}
