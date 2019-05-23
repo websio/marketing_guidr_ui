@@ -42,13 +42,21 @@
 
 
             }
+            .cta-text{
+                font-family: 'Fjalla One', sans-serif;
+                color    : #3f3f46;
+                padding-top:10px;
 
+            }
             .content-wrapper {
-                width        : 50%;
-                border-radius: 15px;
+                background:rgba(255, 255, 255, 0.3);
+                width        : 100%;
+               
 
                 @media @desktop {
-                    padding: 25px;
+                    width:50%;
+                    padding: 25px; 
+                    border-radius: 15px;
                 }
 
 
@@ -59,9 +67,11 @@
                     border          : none;
 
                     margin-top: 20px;
-                    width     : 100%;
+                    width     : 50%;
                     padding   : 5px 0 5px 0;
                     font-size : 2rem;
+                    margin-bottom:20px;
+
 
                     &:hover {
                         background: #79a354;
@@ -108,9 +118,12 @@
         }
 
 
-
+        .content-text{
+            font-size:1.9rem;
+            font-family: 'Fjalla One', sans-serif;
+        }
         .content {
-
+            
             margin-top: 40px;
             color     : white;
             width     : 90%;
@@ -139,6 +152,9 @@
     .bottom-content {
 
         .testimonial {
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
             color:white;
             text-align : center;
             padding-top: 50px;
@@ -158,10 +174,12 @@
                 background   : rgba(0, 0, 0, .4);
                 border-radius: 10px;
             }
+            .fas:hover{
+                color:#3f3f46;
+            }
         }
-
-        .break{
-            width:100%;
+        .hidden{
+            display:none;
         }
 
         .cards {

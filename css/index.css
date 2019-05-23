@@ -393,13 +393,20 @@ footer .copy:hover {
     justify-content: flex-start;
   }
 }
+.home .cta .cta-content .cta-text {
+  font-family: 'Fjalla One', sans-serif;
+  color: #3f3f46;
+  padding-top: 10px;
+}
 .home .cta .cta-content .content-wrapper {
-  width: 50%;
-  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
 }
 @media (min-width: 501px) {
   .home .cta .cta-content .content-wrapper {
+    width: 50%;
     padding: 25px;
+    border-radius: 15px;
   }
 }
 .home .cta .cta-content .content-wrapper .btn {
@@ -407,9 +414,10 @@ footer .copy:hover {
   background-color: #98cb6c;
   border: none;
   margin-top: 20px;
-  width: 100%;
+  width: 50%;
   padding: 5px 0 5px 0;
   font-size: 2rem;
+  margin-bottom: 20px;
 }
 .home .cta .cta-content .content-wrapper .btn:hover {
   background: #79a354;
@@ -442,6 +450,10 @@ footer .copy:hover {
     background: linear-gradient(-45deg, #358654, #98cb6c 500px, #2d474f 500px);
   }
 }
+.home .main-content .content-text {
+  font-size: 1.9rem;
+  font-family: 'Fjalla One', sans-serif;
+}
 .home .main-content .content {
   margin-top: 40px;
   color: white;
@@ -461,6 +473,9 @@ footer .copy:hover {
   width: 100%;
 }
 .home .bottom-content .testimonial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: white;
   text-align: center;
   padding-top: 50px;
@@ -480,8 +495,11 @@ footer .copy:hover {
   background: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
 }
-.home .bottom-content .break {
-  width: 100%;
+.home .bottom-content .testimonial .fas:hover {
+  color: #3f3f46;
+}
+.home .bottom-content .hidden {
+  display: none;
 }
 .home .bottom-content .cards {
   width: 100%;
@@ -698,7 +716,7 @@ footer .copy:hover {
   align-items: center;
 }
 .features .feature span {
-  font-size: 3.5rem;
+  font-size: 5rem;
   align-self: baseline;
 }
 .features .feature .btn--grab {
@@ -725,6 +743,7 @@ footer .copy:hover {
   justify-content: center;
   align-content: center;
   width: 100%;
+  height: auto;
   order: -1;
 }
 @media (min-width: 501px) {
@@ -734,7 +753,6 @@ footer .copy:hover {
 }
 .features .feature .img-thumb {
   max-width: 100%;
-  height: 35rem;
   display: inline-flex;
 }
 @media (min-width: 501px) {

@@ -1,8 +1,8 @@
-let blurDiv = document.querySelector('#navBlurDiv');
-let sideNav = document.querySelector('#sideNavDiv');
+const blurDiv = document.querySelector('#navBlurDiv');
+const sideNav = document.querySelector('#sideNavDiv');
 
-let menu = document.querySelector('.menu');
-let closeMenu = document.querySelector('.menu-close');
+const menu = document.querySelector('.menu');
+const closeMenu = document.querySelector('.menu-close');
 
 menu.addEventListener('click', function(){
  sideNav.classList.remove('side-hide');
