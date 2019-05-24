@@ -471,9 +471,6 @@ footer .copy {
 .home .mid-img {
   width: 100%;
 }
-.home .bottom-content {
-  background-image: linear-gradient(120deg, #1D90B7 0%, #8fd3f4 100%);
-}
 .home .bottom-content .testimonial {
   display: flex;
   justify-content: space-between;
