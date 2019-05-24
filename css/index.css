@@ -353,6 +353,7 @@ footer .copy {
     margin-right: 20px;
   }
 }
+/*Home.less */
 .home {
   background-color: #1D90B7;
 }
@@ -568,6 +569,7 @@ footer .copy {
   background: #79a354;
   color: white;
 }
+/*end home.less*/
 .main-container {
   background-color: #1D90B7;
 }
