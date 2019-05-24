@@ -1,14 +1,12 @@
 .home {
+
     background-color: @bg-color;
-
-
 
     h2 {
         font-family: 'Fjalla One', sans-serif;
-        
-
     }
 
+    //Cta start
     .cta {
         background-image   : url("../imgs/worldAlpha.png");
         background-repeat  : no-repeat;
@@ -16,9 +14,7 @@
         background-size    : contain;
 
         @media @desktop {
-
             padding: 100px 0;
-
         }
 
         margin-top    :30px;
@@ -26,67 +22,62 @@
         flex-direction: column;
         align-items   : center;
 
+        //Cta inner content div
         .cta-content {
             padding-bottom : 30px;
             width          : 100%;
             text-align     : center;
             display        : flex;
             justify-content: center;
-            //text-shadow    : 0px 2px 3px rgba(255, 255, 255, 0.9);
 
             @media @desktop {
 
                 width          : 80%;
                 display        : flex;
                 justify-content: flex-start;
-
-
             }
-            .cta-text{
+
+            .cta-text {
                 font-family: 'Fjalla One', sans-serif;
-                color    : #3f3f46;
-                padding-top:10px;
+                color      : #3f3f46;
+                padding-top: 10px;
 
             }
+
             .content-wrapper {
-                background:rgba(255, 255, 255, 0.3);
-                width        : 100%;
-               
+                background    : rgba(255, 255, 255, 0.3);
+                width         : 100%;
+                padding-bottom: 40px;
 
                 @media @desktop {
-                    width:50%;
-                    padding: 25px; 
+                    width        : 50%;
+                    padding      : 25px;
                     border-radius: 15px;
                 }
 
-
                 .btn {
-                    box-shadow      :  2px 2px 4px #3d3d3d;
-
+                    box-shadow      : 2px 2px 4px #3d3d3d;
                     color           : #3f3f46;
-                    background-color: #98cb6c;
+                    background-color: @landing-btn;
                     border          : none;
-
-                    margin-top: 40px;
-                    width     : 50%;
-                    padding   : 5px 5px ;
-                    font-size : 2rem;
-                    margin-bottom:20px;
-
+                    margin-top      : 40px;
+                    width           : 50%;
+                    padding         : 5px 5px;
+                    font-size       : 2rem;
+                    margin-bottom   : 20px;
 
                     &:hover {
-                        background: #79a354;
+                        background: @landing-btn-hover;
                         color     : white;
                     }
                 }
 
                 h1 {
-
-                    padding-top: 20px;
+                    padding-top: 30px;
                     font-family: 'Fjalla One', sans-serif;
                     font-weight: 900;
-                    font-size: 5rem;
-                    color    : #3f3f46;
+                    font-size  : 7rem;
+                    color      : #3f3f46;
 
                     @media @desktop {
                         font-size: 8rem;
@@ -96,14 +87,18 @@
             }
 
         }
+
+        //ctacontent end
     }
 
-    //end cta
+    //cta end
 
+
+    //Main content start
 
     .main-content {
         color           : white;
-        text-shadow     : 0px 2px 3px rgba(0, 0, 0, 1);
+        text-shadow     : 10px 10px 20px rgba(0, 0, 0, 1);
         background-color: #98cb6c;
         display         : flex;
         flex-direction  : column;
@@ -119,17 +114,17 @@
         }
 
 
-        .content-text{
-            padding-top:20px;
-            font-size:1.9rem;
+        .content-text {
+            padding-top: 20px;
+            font-size  : 1.9rem;
             font-family: 'Fjalla One', sans-serif;
         }
+
         .content {
-            
+
             margin-top: 40px;
             color     : white;
             width     : 90%;
-
             text-align: center;
 
             @media @desktop {
@@ -146,104 +141,123 @@
 
     }
 
+    //middle img
     .mid-img {
         width: 100%
     }
 
     //end main-content
+    //bottom content
     .bottom-content {
+        background-image: linear-gradient(120deg, #1D90B7 0%, #8fd3f4 100%);
 
+        //testimonials
         .testimonial {
-            display:flex;
+            display        : flex;
             justify-content: space-between;
-            align-items: center;
-            color:rgb(46, 46, 46);
-            text-align : center;
-            padding-top: 50px;
-            .test-card{
-                padding:20px 0;
-                background:white;
-                width:70%;
+            align-items    : center;
+            color          : rgb(46, 46, 46);
+            text-align     : center;
+            padding-top    : 50px;
+
+            .test-card {
+                padding      : 20px 0;
+                background   : white;
+                width        : 70%;
                 border-radius: 5px;
-                box-shadow      : 8px 8px 4px  #2e7c86;
-
-
+                box-shadow   : 8px 8px 4px #2e7c86;
             }
+
             img {
                 width        : 40%;
                 border-radius: 50%;
-                border:3px solid #00a2ff;
+                border       : 3px solid #00a2ff;
+
                 @media @desktop {
                     width: 50%;
                 }
             }
-            .carousel-name{
-                padding-top:20px;
-                
+
+            .carousel-name {
+                padding-top: 20px;
+
             }
+
             .carousel-text {
-                padding      : 10px 0;
-                margin       : 0 5%;
-           
+                padding: 10px 0;
+                margin : 0 5%;
+
                 border-radius: 10px;
             }
-            .fas:hover{
-                color:#3f3f46;
+
+            .fas {
+                padding: 0 5%;
+            }
+
+            .fas:hover {
+                color: white;
             }
         }
-        .hidden{
-            display:none;
+
+        //end testimonials
+        .hidden {
+            display: none;
         }
 
+        //cards
         .cards {
-           width:100%;
-            margin-top    : 50px;
-            display       : flex;
-            flex-direction: column;
-            align-content : center;
-            align-items   : center;
+
+            .row-col(flex, column);
+
+            width        : 100%;
+            margin-top   : 40px;
+            align-content: center;
+            align-items  : center;
 
             @media @desktop {
-                flex-wrap:wrap;
-                flex-direction:row;
-                justify-content: space-around;
+                .wrap(flex, wrap);
+                .center(space-around, center);
             }
-            .fas{
-                color:#2d474f;
+
+            .fas {
+                color: #2d474f;
             }
+
             h2 {
-                color:#2d474f;
+                color : #2d474f;
                 margin: 20px 0;
             }
-            .card-content{
-               
-                width:80%;
-                text-align:center;
-                color:black;
+
+            .card-content {
+
+                width        : 80%;
+                text-align   : center;
+                color        : black;
                 margin-bottom: 40px;
                 background   : white;
                 padding      : 40px 10px;
-                box-shadow      : 8px 8px 4px  #2e7c86;
+                box-shadow   : 8px 8px 4px #2e7c86;
+
                 @media @desktop {
-                   width: 40%;
+                    width: 40%;
                 }
+
                 .btn {
-                   
-                    display:inline-block;
-                    text-decoration: none;
+
+                    display         : inline-block;
+                    text-decoration : none;
                     color           : #3f3f46;
-                    background-color: #98cb6c;
-                   
-                    
+                    background-color: @landing-btn;
                     margin-top      : 10px;
                     width           : 60%;
-                    padding         : 5px 30px ;
+                    padding         : 5px 30px;
                     font-size       : 2rem;
                     box-shadow      : 2px 2px 4px #3d3d3d;
+
                     &:hover {
-                        background: #79a354;
+                        background: @landing-btn-hover;
                         color     : white;
-                    
+
                     }
 
                 }
@@ -253,6 +267,10 @@
 
         }
 
+        //end cards
+
 
     }
+
+    //end bottom content
 }
