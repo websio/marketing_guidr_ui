@@ -1,33 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- add web fonts here.-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="nav/navigation.js" async></script>
+    <script src="js/indexCarousel.js" async></script>
+
+
+
     <title>GuidR</title>
 </head>
-<body>
-    
-    <header>
-        <nav class="nav ">
-            <a class="nav-link brand" href="index.html">GuidR</a>
-            <div class="target-links">
-                <a class="nav-link" href="features.html">Features</a>
-                <a class="nav-link" href="#">About Us</a>    
-            </div>        
-        </nav>
-    </header>
-    <div class="container home">
-    <section class="cta">
-        <div class="cta-content">
-            <img src="" alt="Image of the world." class="cta-img">
-            <button class="btn"></button>
-        </div>
 
-    </section>
-    </div>
+<body>
+    <div class="container home">
+
+        <header>
+            <nav class="nav ">
+                <div id="navBlurDiv" class="side-hide"></div>
+                <div id="sideNavDiv" class="side-hide sideNavDiv">
+                    <div class="menu-div"> <i class="fas fa-bars fa-3x menu-close"></i></div>
+
+                    <div class="mobile-links ">
+                        <a class="nav-link mobile-brand" href="index.html">GuidR</a>
+
+                        <a class="nav-link " href="features.html">Features</a>
+                        <a class="nav-link " href="#">About Us</a>
+
+                    </div>
+                </div>
+                <i class="fas fa-bars fa-3x menu"></i>
+                <a class="nav-link brand" href="index.html">GuidR</a>
+
+                <div class="target-links links-hidden">
+
+                    <a class="nav-link " href="features.html">Features</a>
+                    <a class="nav-link " href="#">About Us</a>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <section class="cta">
+            <div class="cta-content">
+
+                <div class="content-wrapper">
+
+                    <h1>GuidR </h1>
+                    <h2 class="cta-text">Try it now</h2>
+                    <button class="btn">Get Started</button>
+                </div>
+            </div>
+
+        </section>
+        <section class="main-content">
+
+
+            <div class="content">
+                <h2>GuidR has many great features</h2>
+                <p class="content-text">With GuidR you can let us do all the hard work while you focus on what you love
+                    to do. We take care of all the tedious bits.
+                </p>
+            </div>
+
+            <div class="content">
+                <h2>Quick and simple to use</h2>
+                <p class="content-text">Keeping track of where your going and where you've been has never been this
+                    easy. When you start using GuidR you will wonder how you ever lived with out it.
+                </p>
+            </div>
+            <div class="content">
+                <h2>Everything you need</h2>
+                <p class="content-text">GuidR is packed full of great tools that are easily accessible when your on the
+                    go. Being off grid away from internet access is no problem, with our app we back information up
+                    locally until you have service again.
+                </p>
+            </div>
+        </section>
+
+        <div class="mid-img"><img src="imgs/hiker.jpg""></div>
+        <section class=" bottom-content">
+            <div class="carousel">
+                <div class=" testimonial  " data-tab=0>
+                    <i class="fas fa-chevron-left prev fa-5x"></i>
+                    <div class="test-card">
+                        <img class="testimonial-img" src="imgs/testimonial1.jpg" alt="" class="cta-img">
+
+                        <h2 class="carousel-name">Susan</h2>
+                        <p class="carousel-text">I love GuidR. I have been using it for a month now and it has made my
+                            trips so much easier.
+                        </p>
+                    </div>
+                    <i class="fas fa-chevron-right fa-5x next"></i>
+                </div>
+
+                <div class=" testimonial  hidden" data-tab=1>
+                    <i class="fas fa-chevron-left prev fa-5x"></i>
+                    <div class="test-card">
+                        <img class="testimonial-img" src="imgs/testimonial2.jpg" alt="" class="cta-img">
+
+                        <h2 class="carousel-name">Tim</h2>
+                        <p class="carousel-text">I can keep a professional log of all my travels and decide if I want
+                            them private or public.
+                        </p>
+                    </div>
+                    <i class="fas fa-chevron-right fa-5x next"></i>
+                </div>
+
+                <div class=" testimonial  hidden" data-tab=2>
+                    <i class="fas fa-chevron-left prev fa-5x"></i>
+                    <div class="test-card">
+                        <img class="testimonial-img" src="imgs/testimonial3.jpg" alt="" class="cta-img">
+                        <h2 class="carousel-name">Robert</h2>
+                        <p class="carousel-text">I wish I would have found GuidR 6 months ago. This completely changes
+                            how log my trips.
+                        </p>
+                    </div>
+                    <i class="fas fa-chevron-right fa-5x next"></i>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="secure card-content">
+                    <i class="fas fa-lock fa-5x"></i>
+                    <h2>Secure</h2>
+                    <p>GuidR was developed keeping your privacy in mind and your information safe. We are constantly
+                        employing preventative measures against all threats.
+                    </p>
+                </div>
+                <div class="professional card-content">
+                    <i class="fas fa-user-tie fa-5x"></i>
+                    <h2>Professional</h2>
+                    <p>GuidR can add to your professional appearance. We have many tools to help your career. We can
+                        help you build your professional resume. 
+                    </p>
+                </div>
+                <div class="feat card-content">
+                    <i class="fas fa-map-marked-alt fa-5x"></i>
+                    <h2>Features</h2>
+                    <p> GuidR will allow you to access your existing trips and create new ones adding information for
+                        the type of trip, the location it took place among other things.
+                        Go ahead check out our features.
+                    </p>
+                    <a class="btn" href="./features.html">Features</a>
+                </div>
+            </div>
+            </section>
+            <footer>
+                <h4><a class="nav-link link" href="./index.html">GuidR</a></h4>
+                <p>&copy; 2019 GuidR</p>
+            </footer>
+        </div>
 </body>
 </html>

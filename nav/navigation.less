@@ -1,0 +1,133 @@
+
+.nav {
+    padding:10px 10px;
+    width           : 90%;
+    display         : flex;
+    margin-left: 5%;
+    box-shadow: 4px 8px 8px #2e7c86;
+    background-color: rgb(255, 255, 255);
+    
+
+    @media @desktop {
+        box-shadow: 0 0 0 #54e8fc;
+        border-bottom:2px solid white;
+        background-color:@bg-color;
+        flex-direction : row;
+        justify-content: space-between;
+        
+    
+
+    }
+    .menu-div{
+        padding:10px 0;
+        background: white;
+        width:93%;
+        margin-left:7%;
+    }
+    .nav-blur{
+        height: 100%; 
+        width: 100%; 
+        position: fixed;
+        z-index:1; 
+        top: 0; 
+        left: 0;
+        background-color: rgb(37, 37, 37); 
+        overflow-x: hidden; 
+        padding-top:30px;
+        opacity: .9;
+       
+    }
+    .side-show{
+        
+        height: 100%; 
+        width: 75%; 
+        position: fixed;
+        z-index:2; 
+        top: 0; 
+        left: 0;
+        background-color: @plantation; 
+        overflow-x: hidden; 
+        padding-top:30px;
+       
+        .menu-close{
+                margin-left:10px;
+        }
+        .mobile-links{
+            
+            width:100%;
+            text-align: center;
+            display:flex;
+            flex-direction: column;
+
+            
+            .nav-link{
+                font-size: 3rem;
+                padding:10px 0;
+                color:white;
+                font-weight: 900;
+              
+            &:hover{
+                background:#636262;
+                color:white;
+            }
+                
+            }
+            .mobile-brand{
+                padding-top:20px;
+                font-size:3.5rem;
+                margin-bottom:100px;
+              
+            }
+        }
+    }
+    
+    
+    .side-hide{
+        display:none;
+    }
+    .nav-link {
+        text-decoration: none;
+        font-size      : 2rem;
+        color          : rgb(53, 156, 204);
+        font-family: 'Fjalla One', sans-serif;
+        &:hover{
+            color:#3f3f46;
+        }
+        @media @desktop{
+            color:white;
+            margin-right: 20px;
+        }
+
+        &.highlight {
+            color: @iron;
+        }
+
+    }
+
+    .target-links {
+        display: none;
+       
+        @media @desktop {
+            width:40%;
+            display:flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+
+    .menu {
+        margin-right: 30%;
+        @media @desktop {
+            display: none
+        }
+    }
+
+    .brand {
+        font-size: 3rem;
+        
+        @media @desktop {
+            margin-left:10px;
+        }
+    }
+
+}

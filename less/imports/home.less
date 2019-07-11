@@ -1,0 +1,279 @@
+/*Home.less */
+.home {
+
+    background-color: @bg-color;
+
+    h2 {
+        font-family: 'Fjalla One', sans-serif;
+    }
+
+    //Cta start
+    .cta {
+        background-image   : url("../imgs/worldAlpha.png");
+        background-repeat  : no-repeat;
+        background-position: center;
+        background-size    : contain;
+
+        @media @desktop {
+            padding: 100px 0;
+        }
+
+        margin-top    :30px;
+        display       :flex;
+        flex-direction: column;
+        align-items   : center;
+
+        //Cta inner content div
+        .cta-content {
+            padding-bottom : 30px;
+            width          : 100%;
+            text-align     : center;
+            display        : flex;
+            justify-content: center;
+
+            @media @desktop {
+
+                width          : 80%;
+                display        : flex;
+                justify-content: flex-start;
+            }
+
+            .cta-text {
+                font-family: 'Fjalla One', sans-serif;
+                color      : #3f3f46;
+                padding-top: 10px;
+
+            }
+
+            .content-wrapper {
+                background    : rgba(255, 255, 255, 0.3);
+                width         : 100%;
+                padding-bottom: 40px;
+
+                @media @desktop {
+                    width        : 50%;
+                    padding      : 25px;
+                    border-radius: 15px;
+                }
+
+                .btn {
+                    box-shadow      : 2px 2px 4px #3d3d3d;
+                    color           : #3f3f46;
+                    background-color: @landing-btn;
+                    border          : none;
+                    margin-top      : 40px;
+                    width           : 50%;
+                    padding         : 5px 5px;
+                    font-size       : 2rem;
+                    margin-bottom   : 20px;
+
+                    &:hover {
+                        background: @landing-btn-hover;
+                        color     : white;
+                    }
+                }
+
+                h1 {
+                    padding-top: 30px;
+                    font-family: 'Fjalla One', sans-serif;
+                    font-weight: 900;
+                    font-size  : 7rem;
+                    color      : #3f3f46;
+
+                    @media @desktop {
+                        font-size: 8rem;
+                    }
+                }
+
+            }
+
+        }
+
+        //ctacontent end
+    }
+
+    //cta end
+
+
+    //Main content start
+
+    .main-content {
+        color           : white;
+        text-shadow     : 10px 10px 20px rgba(0, 0, 0, 1);
+        background-color: #98cb6c;
+        display         : flex;
+        flex-direction  : column;
+        align-items     : center;
+
+        @media @desktop {
+            width      : 100%;
+            align-items: left;
+            background : linear-gradient(-45deg,
+                    rgb(53, 134, 84),
+                    #98cb6c 500px,
+                    #2d474f 500px);
+        }
+
+
+        .content-text {
+            padding-top: 20px;
+            font-size  : 1.9rem;
+            font-family: 'Fjalla One', sans-serif;
+        }
+
+        .content {
+
+            margin-top: 40px;
+            color     : white;
+            width     : 90%;
+            text-align: center;
+
+            @media @desktop {
+                width     : 90%;
+                text-align: left;
+
+                &:nth-child(2) {
+                    text-align: right;
+                }
+
+            }
+
+        }
+
+    }
+
+    //middle img
+    .mid-img {
+        width: 100%
+    }
+
+    //end main-content
+    //bottom content
+    .bottom-content {
+        
+
+        //testimonials
+        .testimonial {
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+            color          : rgb(46, 46, 46);
+            text-align     : center;
+            padding-top    : 50px;
+
+            .test-card {
+                padding      : 20px 0;
+                background   : white;
+                width        : 70%;
+                border-radius: 5px;
+                box-shadow   : 8px 8px 4px #2e7c86;
+            }
+
+            img {
+                width        : 40%;
+                border-radius: 50%;
+                border       : 3px solid #00a2ff;
+
+                @media @desktop {
+                    width: 50%;
+                }
+            }
+
+            .carousel-name {
+                padding-top: 20px;
+
+            }
+
+            .carousel-text {
+                padding: 10px 0;
+                margin : 0 5%;
+
+                border-radius: 10px;
+            }
+
+            .fas {
+                padding: 0 5%;
+            }
+
+            .fas:hover {
+                color: white;
+            }
+        }
+
+        //end testimonials
+        .hidden {
+            display: none;
+        }
+
+        //cards
+        .cards {
+
+            .row-col(flex, column);
+
+            width        : 100%;
+            margin-top   : 40px;
+            align-content: center;
+            align-items  : center;
+
+            @media @desktop {
+                .wrap(flex, wrap);
+                .center(space-around, center);
+            }
+
+            .fas {
+                color: #2d474f;
+            }
+
+            h2 {
+                color : #2d474f;
+                margin: 20px 0;
+            }
+
+            .card-content {
+
+                width        : 80%;
+                text-align   : center;
+                color        : black;
+                margin-bottom: 40px;
+                background   : white;
+                padding      : 40px 10px;
+                box-shadow   : 8px 8px 4px #2e7c86;
+
+                @media @desktop {
+                    width: 40%;
+                }
+
+                .btn {
+
+                    display         : inline-block;
+                    text-decoration : none;
+                    color           : #3f3f46;
+                    background-color: @landing-btn;
+                    margin-top      : 10px;
+                    width           : 60%;
+                    padding         : 5px 30px;
+                    font-size       : 2rem;
+                    box-shadow      : 2px 2px 4px #3d3d3d;
+
+                    &:hover {
+                        background: @landing-btn-hover;
+                        color     : white;
+
+                    }
+
+                }
+
+            }
+
+
+        }
+
+        //end cards
+
+
+    }
+
+    //end bottom content
+}
+
+/*end home.less*/

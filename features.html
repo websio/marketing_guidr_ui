@@ -4,100 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- web fonts placed here -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="nav/navigation.js" async></script>
+    <script src="./Article/Article.js" async></script>
+    <script src="./FeatureCta/FeatureCta.js" async></script>
+    <script src="./FeatureFlip/FeatureBtn.js" async></script>
+
     <title>GuidR - Features</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container main-container">
         <header>
-            <nav class="nav">
-                <a class="nav-link" href="index.html">GuidR</a>
-                <a class="nav-link" href="./features.html">Features</a>
-                <a class="nav-link" href="#">About Us</a>            
+            <nav class="nav ">
+                <div id="navBlurDiv" class="side-hide"></div>
+                <div id="sideNavDiv" class="side-hide sideNavDiv">
+                   <div class="menu-div"> <i class="fas fa-bars fa-3x menu-close"></i></div>
+                   
+                    <div class="mobile-links ">
+                        <a class="nav-link mobile-brand" href="index.html">GuidR</a>
+
+                        <a class="nav-link " href="features.html">Features</a>
+                        <a class="nav-link " href="#">About Us</a>
+    
+                    </div>
+                </div>
+                <i class="fas fa-bars fa-3x menu"></i>
+                <a class="nav-link brand" href="index.html">GuidR</a>
+
+                <div class="target-links links-hidden">
+
+                    <a class="nav-link " href="features.html">Features</a>
+                    <a class="nav-link " href="#">About Us</a>
+
+                </div>
+
             </nav>
+            
         </header>
-        <!-- cta place here -->
         <section class="features-cta-section">
-            <div class="column-half">
-                <div class="card">
-                    <h2 class="center">
+            <div class="column-half feature-section">
+                <div class="cta-phrase">
+                    <h1 class="center ">
                         Put it on the Map<br>
                         With GuidR
-                    </h2>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, hic architecto sunt voluptatum praesentium
-                    minus delectus? Labore fugiat incidunt nobis aliquid? Autem, odit quidem facilis itaque debitis accusamus
-                    perspiciatis optio!
-                    </p>
-                    
+                    </h1>
+                    <img class="halfs-max cta-img-mobile" src="./imgs/adult-cactus-camera-297755.jpg" alt="Person Using Map and Laptop on Wooden Surface">
+
+                <div class="cta-info">
+                    <p class="feature-info"><b>GuidR</b> makes posting about every type of guide trip simple. Whether it be Professional or Private trips you have a place here at GuidR. Mark up your trips, places, and length for people to know. If you want to record for your portfolio to showcase or to record all the guide trips you have taken, your destination is Guidr.</p>
+
+                    <button type="button" class="btn btn-primary cta-btn btn--center">Get Started</button>
                 </div>
+
             </div>
-            <div class="column-half feature-info">
-                <div class="card">
-                    <table class="table">
-                        <tr>
-                            <td><i class="fas fa-check"></i> Profiles</td>
-                            <td><i class="fas fa-check"></i> Trip Listings</td>
-                        </tr>
-                        <tr>
-                            <td><i class="fas fa-check"></i> Trip Details</td>
-                            <td><i class="fas fa-check"></i> Private/Pro Trip option</td>
-                        </tr>
-                    </table>
-                    <button type="button" class="btn btn-primary">Get Started</button>
-                </div>
+            <img class="halfs-max cta-img" src="./imgs/adult-cactus-camera-297755.jpg" alt="Person Using Map and Laptop on Wooden Surface">
+
             </div>
+
         </section>
         <section class="features">
+                <div class="column-half feature-list">
+                    <div class="card">
+                        <h3 class="card-header lg-font center">Features</h3>
+                            <div class="row">
+                                <p class="card-p list list-left">
+                                     <i class="fas fa-check fa-space"></i> Portfolio Page
+                                </p> 
+                              <p class="card-p list list-left">
+                                  <i class="fas fa-check fa-space"></i> Trip Listings
+                              </p>
+                            </div>
+                            <div class="row">
+                                <p class="card-p list">
+                                    <i class="fas fa-check fa-space"></i> Trip Details
+                                </p>
+                                <p class="card-p list list-left">
+                                    <i class="fas fa-check fa-space"></i> Private/Pro<br> Trip option
+                                </p>
+                            </div>                          
+                        <button type="button" class="card-btn feature-btn btn btn-secondary btn--center">Get Started</button>
+                    </div>
+                </div>
+        </section>
+        <section class="features">
+            <div class="feature-style">
                 <div class="feature">
-                    <h2>Profile</h2>
-                    <i class="fas fa-user-circle"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aut, nobis expedita et voluptatem amet,
-                       aque sunt exercitationem mollitia ratione saepe! Atque iure impedit vel, fugiat cumque alias nobis 
-                       dolorem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus odit sint neque assumenda
-                       perspiciatis cum iste numquam cumque vitae, adipisci quod beatae distinctio aliquam aperiam suscipit eaque
-                       ipsum natus explicabo.
-                    </p>
-                    <span class="expanButton"></span>
+                    <div class="feature-top">
+                       <div class="drop--down"><h2 class="headline">Portfolio Page</h2><span class="btn--drop btn--close"></span></div>
+                    </div>
+                    <div class="row columns-mobile">
+                        <div class="img-container">
+                                <img class="img-thumb" src="./imgs/black-and-white-boy-casual-555790.jpg" alt="Man In Crew-neck Shirt" class="half-mobile">
+                        </div>
+                        <p class="half pad">This your landing pad, your little bit of space to call home. Your portfolio page where you can list your trips. You can have a title, and add your specialization of guide type. Additionally you can add time spent as a guide here. 
+                        </p>
+                    </div>
+                    <div class="feature-bottom">
+                        <span class="btn--grab"></span>
+                    </div> 
                 </div>
-                <div class="article">
-                    <h2>Trip Listing</h2>
-                    <i class="fas fa-map-marked"></i>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste aliquid sapiente nihil atque quibusdam
-                        perspiciatis quam reprehenderit, minus labore. Reprehenderit tempora, delectus quisquam recusandae
-                        magnam quaerat veritatis omnis distinctio dolorum.
+            </div>
+               
+                <div class="feature">
+                    <div class="feature-top">
+                     <div class="drop--down"><h2>Trip Listing</h2><span class="btn--drop"></span></div>
+                    </div>
+                   <div class="row columns-mobile">
+                    <p class="half pad">List those trips! As a guide we want you to be able to mark those notches, show your worthiness, and list your experiences. Showcase the types of experiences you give, the trips you offer, the reason your the guide to choose.
                     </p>
-                    <span class="expandButton"></span>
+                    <div class="img-container">
+                        <img class="img-thumb" src="./imgs/checklist-composition-handwriting-1226398.jpg" alt="Notebook">
+                    </div>
+                    
+                   </div>
+                   <div class="feature-bottom">
+                        <span class="btn--grab"></span>
+                   </div> 
                 </div>
-                <div class="article">
-                    <h2>Trip Details</h2>
-                    <i class="fas fa-info-circle"></i>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt hic a ducimus voluptatem magnam magni
-                       ipsam ad doloribus. Corporis quo excepturi eos mollitia placeat qui a ducimus maxime totam asperiores.
-                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima consequuntur magnam laudantium vero
-                       veritatis commodi doloribus explicabo excepturi mollitia tempore magni, quae quia? Nostrum, aut.
-                       Reiciendis explicabo molestiae similique repellendus!
-                    </p>
-                    <span class="expandButton"></span>
+                <div class="feature">
+                    <div class="feature-top">
+                     <div class="drop--down"><h2>Trip Details</h2><span class="btn--drop"></span></div>
+                    </div>
+                    <div class="row columns-mobile">
+                        <div class="img-container">
+                            <img class="img-thumb" src="./imgs/depth-of-field-desk-essay-210661.jpg" alt="Person Holding Blue Ballpoint Pen Writing in Notebook">
+                        </div>
+                        <p class="half pad">When listing a trip, Your in charge listing name, the description, the details. Show case some photos with your trip even. Let people know what they are goign to experience! Naming things is hard, but if you give a good name people will knwo what your guide trips are about, so name well. Giving a good description also helps give a better idea what your adventurers are in for.
+                        </p>
+                    </div>
+                    <div class="feature-bottom">
+                        <span class="btn--grab"></span>
+                    </div>   
                 </div>
-                <div class="article">
-                    <h2>Private/Pro Trip Listing</h2>
-                    <i class="fas fa-list"></i>
-                    <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus exercitationem ut impedit ipsum.
-                     Non quia blanditiis similique exercitationem perspiciatis nam obcaecati sint aperiam, nesciunt beatae
-                     reprehenderit provident deleniti, dolore ab! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                     Voluptate maiores nemo aut architecto! Placeat vitae, quisquam incidunt adipisci id corrupti omnis perferendis
-                     aut, fuga, blanditiis soluta impedit nulla nihil labore?
-                    </p>
-                    <span class="expandButton"></span>
+                <div class="feature">
+                    <div class="feature-top">
+                       <div class="drop--down"><h2>Amateur/Pro Marking</h2><span class="btn--drop"></span></div>
+                    </div>
+                    <div class="row columns-mobile">
+                        <p class="half pad">
+                        Mark your guide trips professional trips, or amateur trips. Show your professional side and your fun side. Mark your professional trips so people know these are what they are looking ahead too. Then you can share your amateur trips to show all the things you have done too. 
+                        </p>
+                        <div class="img-container">
+                            <img class="img-thumb" src="./imgs/asia-background-beautiful-952895.jpg" alt="Brown Wooden Waterfall Direction Sign Placed on Brown Tree Bark">
+                        </div>    
+                    </div>
+                    <div class="feature-bottom">
+                        <span class="btn--grab"></span>
+                    </div> 
                 </div>
             </section>
             <footer>
-                <h4><a href=".index.html">GuidR</a></h4>
-                <p>&copy; 2019 GuidR</p>
+                    <a class="nav-link brand" href="index.html">GuidR</a>
+                <br>
+                <p class="copy">&copy; 2019 GuidR</p>
             </footer>
     </div>
 </body>
